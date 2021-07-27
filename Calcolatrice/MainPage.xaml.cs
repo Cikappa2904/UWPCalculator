@@ -39,12 +39,16 @@ namespace Calcolatrice
             segno.Text = "";
             secondoValore.Text = "";
             Window.Current.CoreWindow.CharacterReceived += CoreWindow_CharacterReceived;
+            
 
         }
 
-        
+        private void page_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
 
-        private void CoreWindow_CharacterReceived(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.CharacterReceivedEventArgs args)
+        }
+
+            private void CoreWindow_CharacterReceived(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.CharacterReceivedEventArgs args)
         {
 
             switch (args.KeyCode)

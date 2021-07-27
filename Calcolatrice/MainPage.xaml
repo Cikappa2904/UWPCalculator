@@ -13,10 +13,11 @@
 
     <Grid ColumnSpacing="10.0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
@@ -27,11 +28,11 @@
 
 
 
-
-        <Button Content="1" FontSize="50px" Click="Button_Click_1" Grid.Row="1" Grid.Column="1"/>
-        <Button Content="2" FontSize="50px" Click="Button_Click_2" Grid.Row="1" Grid.Column="2"/>
+    
+        <Button Content="1" FontSize="50px" Click="Button_Click_1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch"/>
+        <Button Content="2" FontSize="50px" Click="Button_Click_2" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch"/>
         <Button Content="3" FontSize="50px" Click="Button_Click_3" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-
+    
             <TextBlock x:Name="risultato" HorizontalAlignment="Left" Margin="843,71,0,0" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Top"/>
             <Button Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click"/>
             <TextBlock x:Name="primoValore" HorizontalAlignment="Left" Margin="769,44,0,0" Text="primoValore" TextWrapping="Wrap" VerticalAlignment="Top" />
