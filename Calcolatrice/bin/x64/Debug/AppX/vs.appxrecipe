@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-27T15:48:00.285</Modified>
+      <Modified>2021-07-27T20:11:11.934</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.exe">
       <PackagePath>entrypoint\Calcolatrice.exe</PackagePath>
-      <Modified>2021-07-27T15:47:59.346</Modified>
+      <Modified>2021-07-27T20:11:10.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,15 +86,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.xr.xml">
       <PackagePath>Calcolatrice.xr.xml</PackagePath>
-      <Modified>2021-07-27T15:35:12.712</Modified>
+      <Modified>2021-07-27T20:09:12.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-07-27T15:47:59.235</Modified>
+      <Modified>2021-07-27T20:11:10.842</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-07-27T15:47:59.235</Modified>
+      <Modified>2021-07-27T20:11:10.841</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -110,7 +110,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\Calcolatrice.exe">
       <PackagePath>Calcolatrice.exe</PackagePath>
-      <Modified>2021-07-27T15:48:00.282</Modified>
+      <Modified>2021-07-27T20:11:11.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

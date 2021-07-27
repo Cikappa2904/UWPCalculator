@@ -153,7 +153,7 @@ namespace Calcolatrice
 
         private void Button_Click(object sender, RoutedEventArgs e) //tasto +
         {
-
+           
 
             primoValore.Text = risultato.Text;
            
@@ -188,9 +188,9 @@ namespace Calcolatrice
             {
                 result = pValore + sValore + tValore;
                 risultato.Text = result.ToString();
-                segno.Text = "+";
+                
             }
-           
+                segno.Text = "+";
                 lastSignUsed = 1;
                 didSignGetPressed = true;
             
@@ -352,7 +352,7 @@ namespace Calcolatrice
                     {
                         result = pValore + sValore;
                         primoValore.Text = pValore.ToString();
-                        segno.Text = " + ";
+                        segno.Text = "+";
                         secondoValore.Text = sValore.ToString();
                         break;
                     }

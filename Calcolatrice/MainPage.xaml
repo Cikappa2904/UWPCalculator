@@ -6,59 +6,130 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    SizeChanged="page_SizeChanged"
+
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
 
-    <Grid ColumnSpacing="10.0">
+
+
+
+    <Grid ColumnSpacing="10.0" RowSpacing="10.0">
+        <!-- Roba di Blend -->
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualStateGroup.Transitions>
+                </VisualStateGroup.Transitions>
+                <VisualState x:Name="Small">
+                    <VisualState.Setters>
+                        <Setter Target="number1.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button1.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button2.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button3.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button4.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button5.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button6.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button7.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button8.(Control.FontSize)" Value="16"/>
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="16"/>
+                        <Setter Target="button9.(Control.FontSize)" Value="16"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Normal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" MinWindowHeight="600"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="BiggerThanSmall">
+                    <VisualState.Setters>
+                        <Setter Target="number1.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button1.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button2.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button3.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button4.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button5.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button6.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button7.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button8.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button9.(Control.FontSize)" Value="24"/>
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="24"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" MinWindowHeight="400"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!-- Roba di Blend -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
         </Grid.RowDefinitions>
 
 
 
-    
-        <Button Content="1" FontSize="50px" Click="Button_Click_1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch"/>
-        <Button Content="2" FontSize="50px" Click="Button_Click_2" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch"/>
-        <Button Content="3" FontSize="50px" Click="Button_Click_3" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-    
-            <TextBlock x:Name="risultato" HorizontalAlignment="Left" Margin="843,71,0,0" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Top"/>
-            <Button Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click"/>
-            <TextBlock x:Name="primoValore" HorizontalAlignment="Left" Margin="769,44,0,0" Text="primoValore" TextWrapping="Wrap" VerticalAlignment="Top" />
-            <Button Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click"/>
-            <Button Content="=" FontSize="50px" Margin="607,603,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Uguale"/>
-            <Button x:Name="BottonePiu" Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click"/>
-            <TextBlock x:Name="segno" HorizontalAlignment="Left" Margin="849,44,0,0" Text="segno" TextWrapping="Wrap" VerticalAlignment="Top" />
-            <TextBlock x:Name="secondoValore" HorizontalAlignment="Left" Margin="895,44,0,0" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Top" />
-            <Button Content="-" FontSize="50px" Margin="607,251,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Minus"/>
-            <Button Content="Delete" FontSize="50px" Margin="370,450,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Delete"/>
-            <Button Content="4" FontSize="50px" Margin="22,251,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_4"/>
-            <Button Content="5" FontSize="50px" Margin="196,251,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_5"/>
-            <Button Content="6" FontSize="50px" Margin="370,251,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_6"/>
-            <Button Content="7" FontSize="50px" Margin="22,349,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_7"/>
-            <Button Content="8" FontSize="50px" Margin="196,349,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_8"/>
-            <Button Content="9" FontSize="50px" Margin="370,349,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_9" RenderTransformOrigin="0.5,0.5"/>
-            <Button Content="0" FontSize="50px" Margin="196,450,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_0"/>
-            <Button Content="*" FontSize="50px" Margin="607,349,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Multiply"/>
-            <Button Content="/" FontSize="50px" Margin="607,450,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Division"/>
-            <TextBlock x:Name="Test" HorizontalAlignment="Left" Margin="912,627,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-      
+
+
+        <Button x:Name="number1" Content="1" FontSize="50px" Click="Button_Click_1" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Button x:Name="button" Content="2" FontSize="50px" Click="Button_Click_2" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button x:Name="button1" Content="3" FontSize="50px" Click="Button_Click_3" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button x:Name="button2" Content="4" FontSize="50px" Click="Button_Click_4" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button x:Name="button3" Content="5" FontSize="50px" Click="Button_Click_5" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Button x:Name="button4" Content="6" FontSize="50px" Click="Button_Click_6" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Button x:Name="button5" Content="7" FontSize="50px" Click="Button_Click_7" Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Button x:Name="button6" Content="8" FontSize="50px" Click="Button_Click_8" Grid.Row="3" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Button x:Name="button7" Content="9" FontSize="50px" Click="Button_Click_9" Grid.Row="3" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
+        <Button x:Name="button8" Content="0" FontSize="50px" Click="Button_Click_0" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+
+        <TextBlock x:Name="risultato" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="3" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock x:Name="segno" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="3"  Text="segno" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
+        <TextBlock x:Name="primoValore" Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Left" Text="primoValore" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
+        <TextBlock x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
+
+        <Button x:Name="button9" Content="=" FontSize="50px" Grid.Row="7" Grid.Column="2" VerticalAlignment="Top" Click="Button_Click_Uguale" HorizontalAlignment="Stretch"/>
+        <Button x:Name="BottonePiu" Content="+" FontSize="50px" Grid.Row="7" Grid.Column="1" VerticalAlignment="Top" Click="Button_Click" HorizontalAlignment="Stretch"/>
+
+
+        <Button Content="-" FontSize="50px" Margin="607,251,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Minus"/>
+        <Button Content="Delete" FontSize="50px" Margin="370,450,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Delete"/>
+
+
+        <Button Content="*" FontSize="50px" Margin="607,349,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Multiply"/>
+        <Button Content="/" FontSize="50px" Margin="607,450,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Division"/>
+        <TextBlock x:Name="Test" HorizontalAlignment="Left" Margin="912,627,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
 
 
 
 
 
     </Grid>
-  
+
+
+
+
 </Page>
+
+
+    
+    
+    
