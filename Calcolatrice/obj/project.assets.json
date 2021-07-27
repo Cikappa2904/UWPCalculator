@@ -8293,11 +8293,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\File Personali\\Github\\Calcolatrice\\Calcolatrice\\Calcolatrice\\Calcolatrice.csproj",
+      "projectUniqueName": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
       "projectName": "Calcolatrice",
-      "projectPath": "D:\\File Personali\\Github\\Calcolatrice\\Calcolatrice\\Calcolatrice\\Calcolatrice.csproj",
+      "projectPath": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
       "packagesPath": "C:\\Users\\cikap\\.nuget\\packages\\",
-      "outputPath": "D:\\File Personali\\Github\\Calcolatrice\\Calcolatrice\\Calcolatrice\\obj\\",
+      "outputPath": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
