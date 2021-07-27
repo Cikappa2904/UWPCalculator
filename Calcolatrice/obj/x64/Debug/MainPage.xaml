@@ -8,34 +8,56 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <StackPanel Margin="220,-98,-220,249" Orientation="Horizontal" Grid.RowSpan="1" Grid.ColumnSpan="1" Padding="10,10,10,10">
-            <Button x:ConnectionId='22' Content="1" FontSize="50px" Height="80" Width="169"                       />
-            <Button x:ConnectionId='23' Content="2" FontSize="50px" Height="80" Width="169"                       />
-            <Button x:ConnectionId='24' Content="3" FontSize="50px" Height="80" Width="169"                       />
-        </StackPanel>
-        <TextBlock x:ConnectionId='2' x:Name="risultato" HorizontalAlignment="Left" Margin="843,71,0,0" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='3' Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169"                     />
-        <TextBlock x:ConnectionId='4' x:Name="primoValore" HorizontalAlignment="Left" Margin="769,44,0,0" Text="primoValore" TextWrapping="Wrap" VerticalAlignment="Top" />
-        <Button x:ConnectionId='5' Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169"                     />
-        <Button x:ConnectionId='6' Content="=" FontSize="50px" Margin="607,603,0,0" VerticalAlignment="Top" Height="80" Width="169"                            />
-        <Button x:ConnectionId='7' x:Name="BottonePiu" Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169"                     />
-        <TextBlock x:ConnectionId='8' x:Name="segno" HorizontalAlignment="Left" Margin="849,44,0,0" Text="segno" TextWrapping="Wrap" VerticalAlignment="Top" />
-        <TextBlock x:ConnectionId='9' x:Name="secondoValore" HorizontalAlignment="Left" Margin="895,44,0,0" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Top" />
-        <Button x:ConnectionId='10' Content="-" FontSize="50px" Margin="607,251,0,0" VerticalAlignment="Top" Height="80" Width="169"                           />
-        <Button x:ConnectionId='11' Content="Delete" FontSize="50px" Margin="370,450,0,0" VerticalAlignment="Top" Height="80" Width="169"                            />
-        <Button x:ConnectionId='12' Content="4" FontSize="50px" Margin="22,251,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
-        <Button x:ConnectionId='13' Content="5" FontSize="50px" Margin="196,251,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
-        <Button x:ConnectionId='14' Content="6" FontSize="50px" Margin="370,251,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
-        <Button x:ConnectionId='15' Content="7" FontSize="50px" Margin="22,349,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
-        <Button x:ConnectionId='16' Content="8" FontSize="50px" Margin="196,349,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
-        <Button x:ConnectionId='17' Content="9" FontSize="50px" Margin="370,349,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
-        <Button x:ConnectionId='18' Content="0" FontSize="50px" Margin="196,450,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
-        <Button x:ConnectionId='19' Content="*" FontSize="50px" Margin="607,349,0,0" VerticalAlignment="Top" Height="80" Width="169"                              />
-        <Button x:ConnectionId='20' Content="/" FontSize="50px" Margin="607,450,0,0" VerticalAlignment="Top" Height="80" Width="169"                              />
-        <TextBlock x:ConnectionId='21' x:Name="Test" HorizontalAlignment="Left" Margin="912,627,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+
+    <Grid ColumnSpacing="10.0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+
+
+        <Button x:ConnectionId='2' Content="1" FontSize="50px"                        Grid.Row="1" Grid.Column="1"/>
+        <Button x:ConnectionId='3' Content="2" FontSize="50px"                        Grid.Row="1" Grid.Column="2"/>
+        <Button x:ConnectionId='4' Content="3" FontSize="50px"                        Grid.Row="1" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+            <TextBlock x:ConnectionId='5' x:Name="risultato" HorizontalAlignment="Left" Margin="843,71,0,0" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Button x:ConnectionId='6' Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169"                     />
+            <TextBlock x:ConnectionId='7' x:Name="primoValore" HorizontalAlignment="Left" Margin="769,44,0,0" Text="primoValore" TextWrapping="Wrap" VerticalAlignment="Top" />
+            <Button x:ConnectionId='8' Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169"                     />
+            <Button x:ConnectionId='9' Content="=" FontSize="50px" Margin="607,603,0,0" VerticalAlignment="Top" Height="80" Width="169"                            />
+            <Button x:ConnectionId='10' x:Name="BottonePiu" Content="+" FontSize="50px" Margin="607,151,0,0" VerticalAlignment="Top" Height="80" Width="169"                     />
+            <TextBlock x:ConnectionId='11' x:Name="segno" HorizontalAlignment="Left" Margin="849,44,0,0" Text="segno" TextWrapping="Wrap" VerticalAlignment="Top" />
+            <TextBlock x:ConnectionId='12' x:Name="secondoValore" HorizontalAlignment="Left" Margin="895,44,0,0" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Top" />
+            <Button x:ConnectionId='13' Content="-" FontSize="50px" Margin="607,251,0,0" VerticalAlignment="Top" Height="80" Width="169"                           />
+            <Button x:ConnectionId='14' Content="Delete" FontSize="50px" Margin="370,450,0,0" VerticalAlignment="Top" Height="80" Width="169"                            />
+            <Button x:ConnectionId='15' Content="4" FontSize="50px" Margin="22,251,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
+            <Button x:ConnectionId='16' Content="5" FontSize="50px" Margin="196,251,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
+            <Button x:ConnectionId='17' Content="6" FontSize="50px" Margin="370,251,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
+            <Button x:ConnectionId='18' Content="7" FontSize="50px" Margin="22,349,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
+            <Button x:ConnectionId='19' Content="8" FontSize="50px" Margin="196,349,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
+            <Button x:ConnectionId='20' Content="9" FontSize="50px" Margin="370,349,0,0" VerticalAlignment="Top" Height="80" Width="169"                        RenderTransformOrigin="0.5,0.5"/>
+            <Button x:ConnectionId='21' Content="0" FontSize="50px" Margin="196,450,0,0" VerticalAlignment="Top" Height="80" Width="169"                       />
+            <Button x:ConnectionId='22' Content="*" FontSize="50px" Margin="607,349,0,0" VerticalAlignment="Top" Height="80" Width="169"                              />
+            <Button x:ConnectionId='23' Content="/" FontSize="50px" Margin="607,450,0,0" VerticalAlignment="Top" Height="80" Width="169"                              />
+            <TextBlock x:ConnectionId='24' x:Name="Test" HorizontalAlignment="Left" Margin="912,627,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+      
+
+
+
 
 
     </Grid>
+  
 </Page>
 

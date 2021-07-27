@@ -20,7 +20,7 @@ namespace Calcolatrice
 {
 
 
-    
+
     /// <summary>
     /// Pagina vuota che può essere usata autonomamente oppure per l'esplorazione all'interno di un frame.
     /// </summary>
@@ -41,6 +41,8 @@ namespace Calcolatrice
             Window.Current.CoreWindow.CharacterReceived += CoreWindow_CharacterReceived;
 
         }
+
+        
 
         private void CoreWindow_CharacterReceived(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.CharacterReceivedEventArgs args)
         {
