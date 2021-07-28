@@ -6,7 +6,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    
     Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
 
 
@@ -96,7 +95,11 @@
         <Button x:ConnectionId='9' x:Name="number4" Content="4" FontSize="50px"                        Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Button x:ConnectionId='10' x:Name="number5" Content="5" FontSize="50px"                        Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
         <Button x:ConnectionId='11' x:Name="number6" Content="6" FontSize="50px"                        Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        <Button x:ConnectionId='12' x:Name="number7" Content="7" FontSize="50px"                        Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Button x:ConnectionId='12' x:Name="number7" Content="7" FontSize="50px"                        Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AutomationProperties.AccessKey="" >
+            <Button.Background>
+                <SolidColorBrush Color="{ThemeResource SystemBaseLowColor}"/>
+            </Button.Background>
+        </Button>
         <Button x:ConnectionId='13' x:Name="number8" Content="8" FontSize="50px"                        Grid.Row="3" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
         <Button x:ConnectionId='14' x:Name="number9" Content="9" FontSize="50px"                        Grid.Row="3" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
         <Button x:ConnectionId='15' x:Name="number0" Content="0" FontSize="50px"                        Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
@@ -116,8 +119,8 @@
         <Button x:ConnectionId='25' Content="C" FontSize="50px" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch"                             HorizontalAlignment="Stretch"/>
 
 
-        
-    
+
+
 
 
 

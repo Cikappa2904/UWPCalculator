@@ -6,7 +6,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    
     Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
 
 
@@ -96,7 +95,11 @@
         <Button x:Name="number4" Content="4" FontSize="50px" Click="Button_Click_4" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Button x:Name="number5" Content="5" FontSize="50px" Click="Button_Click_5" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
         <Button x:Name="number6" Content="6" FontSize="50px" Click="Button_Click_6" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        <Button x:Name="number7" Content="7" FontSize="50px" Click="Button_Click_7" Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Button x:Name="number7" Content="7" FontSize="50px" Click="Button_Click_7" Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AutomationProperties.AccessKey="" >
+            <Button.Background>
+                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
+            </Button.Background>
+        </Button>
         <Button x:Name="number8" Content="8" FontSize="50px" Click="Button_Click_8" Grid.Row="3" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
         <Button x:Name="number9" Content="9" FontSize="50px" Click="Button_Click_9" Grid.Row="3" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
         <Button x:Name="number0" Content="0" FontSize="50px" Click="Button_Click_0" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
@@ -116,8 +119,8 @@
         <Button Content="C" FontSize="50px" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch" Click="Button_Click_Delete" HorizontalAlignment="Stretch"/>
 
 
-        
-    
+
+
 
 
 
