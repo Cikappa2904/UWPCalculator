@@ -63,14 +63,7 @@ namespace Calcolatrice
             }
 
                  
-            if (args.KeyCode == 65) //A
-            {
-               Test.Text = "AAAAAAAAA";
-            }
-            if (args.KeyCode == 13) //Enter
-            {
-                // your code here fore Enter key
-            }
+            
         }
 
         void equalClear(string a) //Funzione che controlla se è stato premuto il tasto uguale o un segno, in modo da capire se la prossima volta che si digita un numero bisogna cancellare la textbox

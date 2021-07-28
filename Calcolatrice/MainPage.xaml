@@ -6,8 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
 
 
 
@@ -47,16 +47,16 @@
                 <VisualState x:Name="BiggerThanSmall">
                     <VisualState.Setters>
                         <Setter Target="number1.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button1.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button2.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button3.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button4.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button5.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button6.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button7.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button8.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button9.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number2.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number3.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number4.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number5.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number6.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number7.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number8.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number9.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number0.(Control.FontSize)" Value="24"/>
+                        <Setter Target="equal_sign.(Control.FontSize)" Value="24"/>
                         <Setter Target="BottonePiu.(Control.FontSize)" Value="24"/>
                     </VisualState.Setters>
                     <VisualState.StateTriggers>
@@ -68,6 +68,7 @@
         <!-- Roba di Blend -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -90,32 +91,33 @@
 
 
         <Button x:Name="number1" Content="1" FontSize="50px" Click="Button_Click_1" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-        <Button x:Name="button" Content="2" FontSize="50px" Click="Button_Click_2" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-        <Button x:Name="button1" Content="3" FontSize="50px" Click="Button_Click_3" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-        <Button x:Name="button2" Content="4" FontSize="50px" Click="Button_Click_4" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button x:Name="button3" Content="5" FontSize="50px" Click="Button_Click_5" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        <Button x:Name="button4" Content="6" FontSize="50px" Click="Button_Click_6" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        <Button x:Name="button5" Content="7" FontSize="50px" Click="Button_Click_7" Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        <Button x:Name="button6" Content="8" FontSize="50px" Click="Button_Click_8" Grid.Row="3" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        <Button x:Name="button7" Content="9" FontSize="50px" Click="Button_Click_9" Grid.Row="3" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
-        <Button x:Name="button8" Content="0" FontSize="50px" Click="Button_Click_0" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Button x:Name="number2" Content="2" FontSize="50px" Click="Button_Click_2" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button x:Name="number3" Content="3" FontSize="50px" Click="Button_Click_3" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button x:Name="number4" Content="4" FontSize="50px" Click="Button_Click_4" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button x:Name="number5" Content="5" FontSize="50px" Click="Button_Click_5" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Button x:Name="number6" Content="6" FontSize="50px" Click="Button_Click_6" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Button x:Name="number7" Content="7" FontSize="50px" Click="Button_Click_7" Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Button x:Name="number8" Content="8" FontSize="50px" Click="Button_Click_8" Grid.Row="3" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Button x:Name="number9" Content="9" FontSize="50px" Click="Button_Click_9" Grid.Row="3" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
+        <Button x:Name="number0" Content="0" FontSize="50px" Click="Button_Click_0" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
 
-        <TextBlock x:Name="risultato" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="3" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <TextBlock x:Name="segno" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="3"  Text="segno" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
-        <TextBlock x:Name="primoValore" Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Left" Text="primoValore" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
-        <TextBlock x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
+        <TextBlock x:Name="risultato" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="4" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock x:Name="segno" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="4"  Text="segno" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
+        <TextBlock x:Name="primoValore" Grid.Row="1" Grid.Column="4"  HorizontalAlignment="Left" Text="primoValore" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
+        <TextBlock x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="4" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" />
 
-        <Button x:Name="button9" Content="=" FontSize="50px" Grid.Row="7" Grid.Column="2" VerticalAlignment="Top" Click="Button_Click_Uguale" HorizontalAlignment="Stretch"/>
-        <Button x:Name="BottonePiu" Content="+" FontSize="50px" Grid.Row="7" Grid.Column="1" VerticalAlignment="Top" Click="Button_Click" HorizontalAlignment="Stretch"/>
+        <Button x:Name="equal_sign" Content="=" FontSize="50px" Grid.Row="6" Grid.Column="3" VerticalAlignment="Stretch" Click="Button_Click_Uguale" HorizontalAlignment="Stretch" Style="{StaticResource AccentButtonStyle}"/>
+        <Button x:Name="BottonePiu" Content="+" FontSize="50px" Grid.Row="3" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click" HorizontalAlignment="Stretch"/>
+        <Button Content="-" FontSize="50px" Grid.Row="4" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click_Minus" HorizontalAlignment="Stretch"/>
+        <Button Content="*" FontSize="50px" Grid.Row="5" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click_Multiply" HorizontalAlignment="Stretch"/>
+        <Button Content="/" FontSize="50px" Grid.Row="6" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click_Division" HorizontalAlignment="Stretch"/>
 
 
-        <Button Content="-" FontSize="50px" Margin="607,251,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Minus"/>
-        <Button Content="Delete" FontSize="50px" Margin="370,450,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Delete"/>
+        <Button Content="C" FontSize="50px" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch" Click="Button_Click_Delete" HorizontalAlignment="Stretch"/>
 
 
-        <Button Content="*" FontSize="50px" Margin="607,349,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Multiply"/>
-        <Button Content="/" FontSize="50px" Margin="607,450,0,0" VerticalAlignment="Top" Height="80" Width="169" Click="Button_Click_Division"/>
-        <TextBlock x:Name="Test" HorizontalAlignment="Left" Margin="912,627,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        
+    
 
 
 
