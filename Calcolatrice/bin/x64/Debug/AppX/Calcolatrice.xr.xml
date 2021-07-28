@@ -23,15 +23,10 @@
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
-      <RootMethod Name="GetAccessKey" />
-      <RootMethod Name="SetAccessKey" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
-      <RootProperty Name="Transitions" />
       <RootProperty Name="States" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualState">
