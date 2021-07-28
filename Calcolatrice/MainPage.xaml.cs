@@ -38,17 +38,14 @@ namespace Calcolatrice
             risultato.Text = "";
             segno.Text = "";
             secondoValore.Text = "";
-            Window.Current.CoreWindow.CharacterReceived += CoreWindow_CharacterReceived;
+            //Window.Current.CoreWindow.CharacterReceived += CoreWindow_CharacterReceived;
             
 
         }
 
-        private void page_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
+        
 
-        }
-
-            private void CoreWindow_CharacterReceived(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.CharacterReceivedEventArgs args)
+        /*private void CoreWindow_CharacterReceived(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.CharacterReceivedEventArgs args)
         {
 
             switch (args.KeyCode)
@@ -64,27 +61,31 @@ namespace Calcolatrice
 
                  
             
-        }
+        }*/ //Old function I tried to use to use keyboard to insert numbers before i discovered keyboardAccellerators
 
         void equalClear(string a) //Funzione che controlla se è stato premuto il tasto uguale o un segno, in modo da capire se la prossima volta che si digita un numero bisogna cancellare la textbox
         {
-
-            if (a != "0" && risultato.Text == "0")
+            if(risultato.Text.Length<20)
             {
-                risultato.Text = a;
-            }
-            else if (!didEqualGetPressed && !didSignGetPressed)
-            {
-                risultato.Text = risultato.Text + a;
-            }
+                if (a != "0" && risultato.Text == "0")
+                {
+                    risultato.Text = a;
+                }
+                else if (!didEqualGetPressed && !didSignGetPressed)
+                {
+                    risultato.Text = risultato.Text + a;
+                }
             
-            else
-            {
-                risultato.Text = "";
-                risultato.Text = a;
-                didEqualGetPressed = false;
-                didSignGetPressed = false;
-            }
+                else
+                {
+                    risultato.Text = "";
+                    risultato.Text = a;
+                    didEqualGetPressed = false;
+                    didSignGetPressed = false;
+                }
+            }    
+
+           
 
             
         }
