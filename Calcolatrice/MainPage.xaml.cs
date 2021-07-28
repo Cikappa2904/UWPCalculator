@@ -28,32 +28,39 @@ namespace Calcolatrice
     {
         bool didEqualGetPressed = false, didSignGetPressed = false;
         int lastSignUsed;
-        int result, pValore = 0, sValore = 0, tValore = 0;
+        double result, pValore = 0, sValore = 0, tValore = 0;
 
 
         public MainPage()
         {
             this.InitializeComponent();
             primoValore.Text = "";
-            risultato.Text = "";
+            risultato.Text = "0";
             segno.Text = "";
             secondoValore.Text = "";
-            //Window.Current.CoreWindow.CharacterReceived += CoreWindow_CharacterReceived;
+            Window.Current.CoreWindow.CharacterReceived += CoreWindow_CharacterReceived;
             
 
         }
 
         
 
-        /*private void CoreWindow_CharacterReceived(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.CharacterReceivedEventArgs args)
+        private void CoreWindow_CharacterReceived(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.CharacterReceivedEventArgs args)
         {
 
             switch (args.KeyCode)
             {
-                case 49:
-                case 97:
+                
+                case 8:
                     {
-                        equalClear("1");
+                        if (risultato.Text.Length > 1)
+                        {
+                            risultato.Text = risultato.Text.Remove(risultato.Text.Length - 1);
+                        }
+                        else if (risultato.Text.Length == 1)
+                        {
+                            risultato.Text = risultato.Text.Replace(risultato.Text, "0");
+                        }
                         break;
                     }
                     
@@ -61,11 +68,11 @@ namespace Calcolatrice
 
                  
             
-        }*/ //Old function I tried to use to use keyboard to insert numbers before i discovered keyboardAccellerators
+        } 
 
         void equalClear(string a) //Funzione che controlla se è stato premuto il tasto uguale o un segno, in modo da capire se la prossima volta che si digita un numero bisogna cancellare la textbox
         {
-            if(risultato.Text.Length<20)
+            if(risultato.Text.Length<15)
             {
                 if (a != "0" && risultato.Text == "0")
                 {
@@ -83,7 +90,16 @@ namespace Calcolatrice
                     didEqualGetPressed = false;
                     didSignGetPressed = false;
                 }
-            }    
+            }
+            else
+            {
+                if (didSignGetPressed)
+                {
+                    risultato.Text = "";
+                    risultato.Text = a;
+                    didSignGetPressed = false;
+                }    
+            }
 
            
 
@@ -153,7 +169,7 @@ namespace Calcolatrice
            
             if (primoValore.Text != "")
             {
-                pValore = int.Parse(primoValore.Text);
+                pValore = double.Parse(primoValore.Text);
             }
             else
             {
@@ -162,7 +178,7 @@ namespace Calcolatrice
 
             if (secondoValore.Text != "")
             {
-                sValore = int.Parse(secondoValore.Text);
+                sValore = double.Parse(secondoValore.Text);
             }
             else
             {
@@ -171,7 +187,7 @@ namespace Calcolatrice
 
             if (risultato.Text != "")
             {
-                tValore = int.Parse(risultato.Text);
+                tValore = double.Parse(risultato.Text);
             }
             else
             {
@@ -201,7 +217,7 @@ namespace Calcolatrice
 
             if (primoValore.Text != "")
             {
-                pValore = int.Parse(primoValore.Text);
+                pValore = double.Parse(primoValore.Text);
             }
             else
             {
@@ -210,7 +226,7 @@ namespace Calcolatrice
 
             if (secondoValore.Text != "")
             {
-                sValore = int.Parse(secondoValore.Text);
+                sValore = double.Parse(secondoValore.Text);
             }
             else
             {
@@ -219,7 +235,7 @@ namespace Calcolatrice
 
             if (risultato.Text != "")
             {
-                tValore = int.Parse(risultato.Text);
+                tValore = double.Parse(risultato.Text);
             }
             else
             {
@@ -245,7 +261,7 @@ namespace Calcolatrice
 
             if (primoValore.Text != "")
             {
-                pValore = int.Parse(primoValore.Text);
+                pValore = double.Parse(primoValore.Text);
             }
             else
             {
@@ -254,7 +270,7 @@ namespace Calcolatrice
 
             if (secondoValore.Text != "")
             {
-                sValore = int.Parse(secondoValore.Text);
+                sValore = double.Parse(secondoValore.Text);
             }
             else
             {
@@ -263,7 +279,7 @@ namespace Calcolatrice
 
             if (risultato.Text != "")
             {
-                tValore = int.Parse(risultato.Text);
+                tValore = double.Parse(risultato.Text);
             }
             else
             {
@@ -290,7 +306,7 @@ namespace Calcolatrice
 
             if (primoValore.Text != "")
             {
-                pValore = int.Parse(primoValore.Text);
+                pValore = double.Parse(primoValore.Text);
             }
             else
             {
@@ -299,7 +315,7 @@ namespace Calcolatrice
 
             if (secondoValore.Text != "")
             {
-                sValore = int.Parse(secondoValore.Text);
+                sValore = double.Parse(secondoValore.Text);
             }
             else
             {
@@ -308,7 +324,7 @@ namespace Calcolatrice
 
             if (risultato.Text != "")
             {
-                tValore = int.Parse(risultato.Text);
+                tValore = double.Parse(risultato.Text);
             }
             else
             {
@@ -326,20 +342,21 @@ namespace Calcolatrice
             didSignGetPressed = true;
         }
 
-        private void Button_Click_Delete(object sender, RoutedEventArgs e) //tasto +
+        private void Button_Click_Delete(object sender, RoutedEventArgs e) //deletes everything and reset the main TextBlock (risultato) to 0
         {
             primoValore.Text = "";
             segno.Text = "";
             secondoValore.Text = "";
-            risultato.Text = "";
+            risultato.Text = "0";
         }
 
         
 
+
         private void Button_Click_Uguale(object sender, RoutedEventArgs e)
         {
-            pValore = int.Parse(primoValore.Text);
-            sValore = int.Parse(risultato.Text);
+            pValore = double.Parse(primoValore.Text);
+            sValore = double.Parse(risultato.Text);
             switch (lastSignUsed)
             {
                 case 1: //Caso 1: addizione

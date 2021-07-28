@@ -58,8 +58,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="KeyboardAccelerators" />
-      <RootProperty Name="HorizontalContentAlignment" />
-      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="Style" />
       <RootProperty Name="Background" />
       <RootEvent Name="Click" />
@@ -72,15 +70,16 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Input.KeyboardAccelerator">
       <RootProperty Name="Modifiers" />
       <RootProperty Name="Key" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Calcolatrice.MainPage" />
   </Roots.RootTypes>
 </Roots>
