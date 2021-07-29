@@ -1,1 +1,1 @@
-D:\File Personali\Github\UWPCalculator\Calcolatrice\Calcolatrice.csproj;x64
+C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Calcolatrice.csproj;x64
