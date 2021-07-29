@@ -5,6 +5,7 @@
     xmlns:local="using:Calcolatrice"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
 
@@ -124,12 +125,11 @@
         </Button>
 
         <TextBlock x:ConnectionId='15' x:Name="risultato" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="1" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.ColumnSpan="4" TextAlignment="Right" Margin="0,0,20,0" FontWeight="Bold" Grid.RowSpan="2"/>
-        <TextBlock x:ConnectionId='16' x:Name="segno" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="4"  Text="segno" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="16" />
-        <TextBlock x:ConnectionId='17' x:Name="primoValore" Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Left" Text="primoValore" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="16" Grid.ColumnSpan="3" />
-        <TextBlock x:ConnectionId='18' x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="28" Grid.ColumnSpan="2" Visibility="Collapsed" />
 
-        <Button x:ConnectionId='19' x:Name="equal_sign" Content="=" FontSize="16px" Grid.Row="6" Grid.Column="3" VerticalAlignment="Stretch"                             HorizontalAlignment="Stretch" Style="{StaticResource AccentButtonStyle}"/>
-        <Button x:ConnectionId='20' x:Name="BottonePiu" Content="+" FontSize="16px" Grid.Row="3" Grid.Column="4" VerticalAlignment="Stretch"                      HorizontalAlignment="Stretch">
+        <TextBlock x:ConnectionId='16' x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="28" Grid.ColumnSpan="2" Visibility="Collapsed" />
+
+        <Button x:ConnectionId='17' x:Name="equal_sign" Content="=" FontSize="16px" Grid.Row="6" Grid.Column="3" VerticalAlignment="Stretch"                             HorizontalAlignment="Stretch" Style="{StaticResource AccentButtonStyle}"/>
+        <Button x:ConnectionId='18' x:Name="BottonePiu" Content="+" FontSize="16px" Grid.Row="3" Grid.Column="4" VerticalAlignment="Stretch"                      HorizontalAlignment="Stretch">
             <Button.Background>
                 <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
             </Button.Background>
@@ -137,7 +137,7 @@
                 <KeyboardAccelerator Modifiers="None" Key="Add"/>
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:ConnectionId='21' x:Name="button1" Content="-" FontSize="16px" Grid.Row="4" Grid.Column="4" VerticalAlignment="Stretch"                            HorizontalAlignment="Stretch">
+        <Button x:ConnectionId='19' x:Name="button1" Content="-" FontSize="16px" Grid.Row="4" Grid.Column="4" VerticalAlignment="Stretch"                            HorizontalAlignment="Stretch">
             <Button.Background>
                 <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
             </Button.Background>
@@ -145,7 +145,7 @@
                 <KeyboardAccelerator Modifiers="None" Key="Subtract"/>
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:ConnectionId='22' x:Name="button2" Content="*" FontSize="16px" Grid.Row="5" Grid.Column="4" VerticalAlignment="Stretch"                               HorizontalAlignment="Stretch">
+        <Button x:ConnectionId='20' x:Name="button2" Content="*" FontSize="16px" Grid.Row="5" Grid.Column="4" VerticalAlignment="Stretch"                               HorizontalAlignment="Stretch">
             <Button.Background>
                 <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
             </Button.Background>
@@ -153,7 +153,7 @@
                 <KeyboardAccelerator Modifiers="None" Key="Multiply"/>
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:ConnectionId='23' x:Name="button3" Content="/" FontSize="16px" Grid.Row="6" Grid.Column="4" VerticalAlignment="Stretch"                               HorizontalAlignment="Stretch">
+        <Button x:ConnectionId='21' x:Name="button3" Content="/" FontSize="16px" Grid.Row="6" Grid.Column="4" VerticalAlignment="Stretch"                               HorizontalAlignment="Stretch">
             <Button.Background>
                 <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
             </Button.Background>
@@ -163,7 +163,7 @@
         </Button>
 
 
-        <Button x:ConnectionId='24' x:Name="button" Content="C" FontSize="16px" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch"                             HorizontalAlignment="Stretch">
+        <Button x:ConnectionId='22' x:Name="button" Content="C" FontSize="16px" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch"                             HorizontalAlignment="Stretch">
             <Button.Background>
                 <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
             </Button.Background>
@@ -171,6 +171,10 @@
                 <KeyboardAccelerator Modifiers="None" Key="Delete"/>
             </Button.KeyboardAccelerators>
         </Button>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4">
+            <TextBlock x:ConnectionId='23' x:Name="primoValore" Text="primoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" />
+            <TextBlock x:ConnectionId='24' x:Name="segno" Text="segno" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" />
+        </StackPanel>
 
 
 

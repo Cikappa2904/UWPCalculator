@@ -7,7 +7,7 @@
 
     Per ulteriori informazioni sui file manifesto di pacchetto, vedere http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="79283cc5-be5a-4053-bcc3-f6e604d144be" Publisher="CN=cikap" Version="0.1.0.0" ProcessorArchitecture="arm" />
+  <Identity Name="79283cc5-be5a-4053-bcc3-f6e604d144be" Publisher="CN=cikap" Version="0.1.1.0" ProcessorArchitecture="arm" />
   <mp:PhoneIdentity PhoneProductId="79283cc5-be5a-4053-bcc3-f6e604d144be" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Calcolatrice</DisplayName>

@@ -22,7 +22,7 @@
     <PackageCertificateThumbprint>BD6A730A3C63C4DAB4F4FC612D44D79E191A91C3</PackageCertificateThumbprint>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <AppxPackageDir>D:\Download\Calcolatrice_Release\</AppxPackageDir>
+    <AppxPackageDir>D:\Download\Calcolatrice_Release\0.1.1\</AppxPackageDir>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>

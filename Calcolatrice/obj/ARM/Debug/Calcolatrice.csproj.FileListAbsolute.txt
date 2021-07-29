@@ -44,3 +44,4 @@ D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\ARM\Debug\qualifiers.txt
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\ARM\Debug\ProjectArchitectures.txt
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\ARM\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
+D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\ARM\Debug\Core\ForBundle\AppxManifest.xml

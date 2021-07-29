@@ -1,0 +1,8 @@
+﻿"D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Release\ilc\in\Calcolatrice.exe"
+/Lib:"D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Release\ilc\in"
+/Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\x64\ilc\lib\Private"
+/WinMD:"D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Release\ilc\in\WinMetadata\Microsoft.UI.Xaml.winmd"
+/WinMD:"D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"20885672-1558-40ff-8b82-ee9b50b8823b\",\"Id\":\"2771a36b-874f-4857-aaac-23192e06f440\",\"ProcessStartTime\":637631732234833886}"
+/RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.10-rel-29722-00\tools\LibraryXML"
+/RunOnlyPreDR

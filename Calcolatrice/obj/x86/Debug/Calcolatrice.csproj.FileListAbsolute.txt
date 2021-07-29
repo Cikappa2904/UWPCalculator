@@ -90,3 +90,4 @@ D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x86\Debug\qualifiers.txt
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x86\Debug\ProjectArchitectures.txt
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
+D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x86\Debug\Core\ForBundle\AppxManifest.xml
