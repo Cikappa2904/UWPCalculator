@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -34,6 +35,14 @@ namespace Calcolatrice
         public MainPage()
         {
             this.InitializeComponent();
+
+            var coreTitleBar = CoreApplication.GetCurrentView().TitleBar; //make titlebar acrylic
+            coreTitleBar.ExtendViewIntoTitleBar = true;
+
+            var view = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView(); //make button acrylic
+            view.TitleBar.ButtonBackgroundColor = Windows.UI.Colors.Transparent;
+            view.TitleBar.ButtonInactiveBackgroundColor = Windows.UI.Colors.Transparent;
+
             primoValore.Text = "";
             risultato.Text = "0";
             segno.Text = "";
