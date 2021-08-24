@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-ATBK8MM</Machine>
+    <Machine>POWERBEAST</Machine>
     <WindowsUser>cikap</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>79283cc5-be5a-4053-bcc3-f6e604d144be</PackageIdentityName>
     <PackageIdentityPublisher>CN=cikap</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>8C07441B78217A66F31089BA89FCE11ACBB42F3D53B7C8992A569A14D9137F51</RegisteredManifestChecksum>
+    <LayoutDir>D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>E94A085BC31EF6FD9182847B9AD323908D4175B5A4B0F59D961EC0F45BC0D8A0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>79283cc5-be5a-4053-bcc3-f6e604d144be_0.1.1.0_x64__t7ts6zhfm7dxy</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>79283cc5-be5a-4053-bcc3-f6e604d144be_t7ts6zhfm7dxy!App</RegisteredUserModeAppID>
     <RegisteredPackageID>79283cc5-be5a-4053-bcc3-f6e604d144be</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>0.1.1.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-29T17:18:29.666</Modified>
+      <Modified>2021-08-24T15:30:54.289</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.exe">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.exe">
       <PackagePath>entrypoint\Calcolatrice.exe</PackagePath>
-      <Modified>2021-07-29T17:18:28.495</Modified>
+      <Modified>2021-08-24T15:30:53.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,55 +46,55 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T02:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-07-27T13:52:08.356</Modified>
+      <Modified>2021-07-27T14:33:42.833</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2021-07-27T13:52:08.339</Modified>
+      <Modified>2021-07-27T14:33:42.667</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-27T13:52:08.341</Modified>
+      <Modified>2021-07-27T14:33:42.669</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-27T13:52:08.342</Modified>
+      <Modified>2021-07-27T14:33:42.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-27T13:52:08.342</Modified>
+      <Modified>2021-07-27T14:33:42.689</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-27T13:52:08.344</Modified>
+      <Modified>2021-07-27T14:33:42.690</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-27T13:52:08.344</Modified>
+      <Modified>2021-07-27T14:33:42.721</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-27T13:52:08.346</Modified>
+      <Modified>2021-07-27T14:33:42.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.xr.xml">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.xr.xml">
       <PackagePath>Calcolatrice.xr.xml</PackagePath>
-      <Modified>2021-07-29T17:17:21.357</Modified>
+      <Modified>2021-08-24T15:29:44.597</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-07-29T17:18:28.411</Modified>
+      <Modified>2021-08-24T15:30:53.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-07-29T17:18:28.411</Modified>
+      <Modified>2021-08-24T15:30:53.256</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -104,13 +104,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-02T00:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-07-29T16:59:38.940</Modified>
+      <Modified>2021-08-24T14:45:58.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\Calcolatrice.exe">
+    <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\Calcolatrice.exe">
       <PackagePath>Calcolatrice.exe</PackagePath>
-      <Modified>2021-07-29T17:18:29.663</Modified>
+      <Modified>2021-08-24T15:30:54.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
@@ -219,36 +219,36 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.30035.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.30035.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.30035.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.30035.0</Version>
+      <Version>14.0.29231.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30035.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

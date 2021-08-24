@@ -66,6 +66,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
 
@@ -123,10 +124,15 @@
                 <KeyboardAccelerator Modifiers="None" Key="Number0"/>
             </Button.KeyboardAccelerators>
         </Button>
+        <Button x:Name="dot" Content="," FontSize="16px" Click="Button_Click_Dot" Grid.Row="7" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <!--<Button.KeyboardAccelerators>
+                <KeyboardAccelerator Modifiers="None" Key="Number0"/>
+            </Button.KeyboardAccelerators>-->
+        </Button>
 
         <TextBlock x:Name="risultato" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="1" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="36" Grid.ColumnSpan="5" TextAlignment="Right" Margin="0,0,20,0" FontWeight="Bold" Grid.RowSpan="2"/>
 
-        <TextBlock x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="28" Grid.ColumnSpan="2" Visibility="Collapsed" />
+        <!--<TextBlock x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="28" Grid.ColumnSpan="2" Visibility="Collapsed" />-->
 
         <Button x:Name="equal_sign" Content="=" FontSize="16px" Grid.Row="6" Grid.Column="3" VerticalAlignment="Stretch" Click="Button_Click_Uguale" HorizontalAlignment="Stretch" Style="{StaticResource AccentButtonStyle}"/>
         <Button x:Name="BottonePiu" Content="+" FontSize="16px" Grid.Row="3" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click" HorizontalAlignment="Stretch">
@@ -174,6 +180,7 @@
         <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Right">
             <TextBlock x:Name="primoValore" Text="primoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,0" />
             <TextBlock x:Name="segno" Text="segno" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,0" />
+            <TextBlock x:Name="secondoValore" Text="secondoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10,0,0,0" />
         </StackPanel>
 
 
@@ -182,13 +189,13 @@
 
 
 
-        
+
 
 
 
     </Grid>
 
-    
+
 
 
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -81,9 +82,9 @@ namespace Calcolatrice
 
         void equalClear(string a) //Funzione che controlla se è stato premuto il tasto uguale o un segno, in modo da capire se la prossima volta che si digita un numero bisogna cancellare la textbox
         {
-            if(risultato.Text.Length<15)
+            if (risultato.Text.Length < 15)
             {
-                if (a != "0" && risultato.Text == "0")
+                if (a != "0" && a != "," && risultato.Text == "0" ) 
                 {
                     risultato.Text = a;
                 }
@@ -91,7 +92,6 @@ namespace Calcolatrice
                 {
                     risultato.Text = risultato.Text + a;
                 }
-            
                 else
                 {
                     risultato.Text = "";
@@ -178,7 +178,7 @@ namespace Calcolatrice
            
             if (primoValore.Text != "")
             {
-                pValore = double.Parse(primoValore.Text);
+                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -187,7 +187,7 @@ namespace Calcolatrice
 
             if (secondoValore.Text != "")
             {
-                sValore = double.Parse(secondoValore.Text);
+                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -196,7 +196,7 @@ namespace Calcolatrice
 
             if (risultato.Text != "")
             {
-                tValore = double.Parse(risultato.Text);
+                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -226,7 +226,7 @@ namespace Calcolatrice
 
             if (primoValore.Text != "")
             {
-                pValore = double.Parse(primoValore.Text);
+                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -235,7 +235,7 @@ namespace Calcolatrice
 
             if (secondoValore.Text != "")
             {
-                sValore = double.Parse(secondoValore.Text);
+                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -244,7 +244,7 @@ namespace Calcolatrice
 
             if (risultato.Text != "")
             {
-                tValore = double.Parse(risultato.Text);
+                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -262,7 +262,14 @@ namespace Calcolatrice
             didSignGetPressed = true;
         }
 
-        
+        private void Button_Click_Dot(object sender, RoutedEventArgs e)
+        {
+            if (!risultato.Text.Contains(","))
+            {
+                equalClear(",");
+            }
+            
+        }
 
         private void Button_Click_Multiply(object sender, RoutedEventArgs e) //tasto +
         {
@@ -270,7 +277,7 @@ namespace Calcolatrice
 
             if (primoValore.Text != "")
             {
-                pValore = double.Parse(primoValore.Text);
+                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -279,7 +286,7 @@ namespace Calcolatrice
 
             if (secondoValore.Text != "")
             {
-                sValore = double.Parse(secondoValore.Text);
+                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -288,7 +295,7 @@ namespace Calcolatrice
 
             if (risultato.Text != "")
             {
-                tValore = double.Parse(risultato.Text);
+                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -315,7 +322,7 @@ namespace Calcolatrice
 
             if (primoValore.Text != "")
             {
-                pValore = double.Parse(primoValore.Text);
+                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -324,7 +331,7 @@ namespace Calcolatrice
 
             if (secondoValore.Text != "")
             {
-                sValore = double.Parse(secondoValore.Text);
+                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -333,7 +340,7 @@ namespace Calcolatrice
 
             if (risultato.Text != "")
             {
-                tValore = double.Parse(risultato.Text);
+                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             }
             else
             {
@@ -364,8 +371,8 @@ namespace Calcolatrice
 
         private void Button_Click_Uguale(object sender, RoutedEventArgs e)
         {
-            pValore = double.Parse(primoValore.Text);
-            sValore = double.Parse(risultato.Text);
+            pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+            sValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             switch (lastSignUsed)
             {
                 case 1: //Caso 1: addizione
