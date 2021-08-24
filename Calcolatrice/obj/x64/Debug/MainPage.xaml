@@ -5,7 +5,7 @@
     xmlns:local="using:Calcolatrice"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns:media="using:Microsoft.UI.Xaml.Media"
     mc:Ignorable="d"
     Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
 
@@ -124,7 +124,7 @@
             </Button.KeyboardAccelerators>
         </Button>
 
-        <TextBlock x:ConnectionId='15' x:Name="risultato" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="1" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Grid.ColumnSpan="4" TextAlignment="Right" Margin="0,0,20,0" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBlock x:ConnectionId='15' x:Name="risultato" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="1" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="36" Grid.ColumnSpan="5" TextAlignment="Right" Margin="0,0,20,0" FontWeight="Bold" Grid.RowSpan="2"/>
 
         <TextBlock x:ConnectionId='16' x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="28" Grid.ColumnSpan="2" Visibility="Collapsed" />
 
@@ -171,9 +171,9 @@
                 <KeyboardAccelerator Modifiers="None" Key="Delete"/>
             </Button.KeyboardAccelerators>
         </Button>
-        <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4">
-            <TextBlock x:ConnectionId='23' x:Name="primoValore" Text="primoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" />
-            <TextBlock x:ConnectionId='24' x:Name="segno" Text="segno" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" />
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock x:ConnectionId='23' x:Name="primoValore" Text="primoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,0" />
+            <TextBlock x:ConnectionId='24' x:Name="segno" Text="segno" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,0" />
         </StackPanel>
 
 
@@ -182,11 +182,14 @@
 
 
 
-
+        
 
 
 
     </Grid>
+
+    
+
 
 
 

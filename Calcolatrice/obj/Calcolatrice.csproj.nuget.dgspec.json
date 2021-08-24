@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj": {}
+    "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj": {}
   },
   "projects": {
-    "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj": {
+    "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
+        "projectUniqueName": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
         "projectName": "Calcolatrice",
-        "projectPath": "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
+        "projectPath": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
         "packagesPath": "C:\\Users\\cikap\\.nuget\\packages\\",
-        "outputPath": "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\obj\\",
+        "outputPath": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

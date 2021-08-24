@@ -3886,7 +3886,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
+      "sha512": "GmkKfoyerqmsHMn7OZj0AKpcBabD+GaafqphvX2Mw406IwiJRy1pKcKqdCfKJfYmkRyJ6+e+RaUylgdJoDa1jQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
@@ -8293,11 +8293,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
+      "projectUniqueName": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
       "projectName": "Calcolatrice",
-      "projectPath": "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
+      "projectPath": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
       "packagesPath": "C:\\Users\\cikap\\.nuget\\packages\\",
-      "outputPath": "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\obj\\",
+      "outputPath": "C:\\Users\\cikap\\Documents\\GitHub\\UWPCalculator\\Calcolatrice\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
