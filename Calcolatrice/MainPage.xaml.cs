@@ -48,6 +48,7 @@ namespace Calcolatrice
             risultato.Text = "0";
             segno.Text = "";
             secondoValore.Text = "";
+            uguale.Text = "";
             Window.Current.CoreWindow.CharacterReceived += CoreWindow_CharacterReceived;
             
 
@@ -174,8 +175,10 @@ namespace Calcolatrice
         {
            
 
-            primoValore.Text = risultato.Text;
-           
+            primoValore.Text = risultato.Text; 
+            secondoValore.Text = "";
+            uguale.Text = "";
+
             if (primoValore.Text != "")
             {
                 pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
@@ -223,6 +226,8 @@ namespace Calcolatrice
         private void Button_Click_Minus(object sender, RoutedEventArgs e) //tasto -
         {
             primoValore.Text = risultato.Text;
+            secondoValore.Text = "";
+            uguale.Text = "";
 
             if (primoValore.Text != "")
             {
@@ -274,6 +279,8 @@ namespace Calcolatrice
         private void Button_Click_Multiply(object sender, RoutedEventArgs e) //tasto +
         {
             primoValore.Text = risultato.Text;
+            secondoValore.Text = "";
+            uguale.Text = "";
 
             if (primoValore.Text != "")
             {
@@ -319,6 +326,8 @@ namespace Calcolatrice
         private void Button_Click_Division(object sender, RoutedEventArgs e) //tasto +
         {
             primoValore.Text = risultato.Text;
+            secondoValore.Text = "";
+            uguale.Text = "";
 
             if (primoValore.Text != "")
             {
@@ -364,6 +373,7 @@ namespace Calcolatrice
             segno.Text = "";
             secondoValore.Text = "";
             risultato.Text = "0";
+            uguale.Text = "";
         }
 
         
@@ -371,6 +381,7 @@ namespace Calcolatrice
 
         private void Button_Click_Uguale(object sender, RoutedEventArgs e)
         {
+            uguale.Text = "=";
             pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             sValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
             switch (lastSignUsed)

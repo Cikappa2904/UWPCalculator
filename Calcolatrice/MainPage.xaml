@@ -181,10 +181,11 @@
             <TextBlock x:Name="primoValore" Text="primoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,0" />
             <TextBlock x:Name="segno" Text="segno" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,0" />
             <TextBlock x:Name="secondoValore" Text="secondoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10,0,0,0" />
+            <TextBlock x:Name="uguale" Text="uguale" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10,0,0,0" />
         </StackPanel>
 
 
-
+       
 
 
 
@@ -195,7 +196,7 @@
 
     </Grid>
 
-
+  
 
 
 
