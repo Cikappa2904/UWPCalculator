@@ -156,19 +156,19 @@ namespace Calcolatrice
             switch(temp)
             {
                 case "+":
-                    result = pValore + sValore + tValore;
+                    result = pValore + tValore;
                 break;
 
                 case "-":
-                    result = pValore - sValore - tValore;
+                    result = pValore - tValore;
                 break;
 
                 case "*":
-                    result = pValore * sValore * tValore;
+                    result = pValore * tValore;
                 break;
 
                 case "/":
-                    result = pValore / sValore / tValore;
+                    result = pValore / tValore;
                 break;
     
             }
@@ -236,14 +236,10 @@ namespace Calcolatrice
 
 
             convertingTextBlocks();
-
             if (lastSignUsed != 0)
-            {
-                result = pValore + sValore + tValore;
-                risultato.Text = result.ToString();
-                
-            }
-                segno.Text = "+";
+                CheckingLastUsedSign();
+
+            segno.Text = "+";
                 lastSignUsed = 1;
                 didSignGetPressed = true;
         }
@@ -253,7 +249,8 @@ namespace Calcolatrice
 
 
             convertingTextBlocks();
-            CheckingLastUsedSign();
+            if (lastSignUsed!=0)
+                CheckingLastUsedSign();
 
 
             segno.Text = "-";
@@ -275,11 +272,7 @@ namespace Calcolatrice
             convertingTextBlocks();
 
             if (lastSignUsed != 0)
-            {
-                result = pValore * sValore * tValore;
-                risultato.Text = result.ToString();
-                
-            }
+                CheckingLastUsedSign();
 
             segno.Text = "*";
             lastSignUsed = 3;
@@ -294,11 +287,7 @@ namespace Calcolatrice
             convertingTextBlocks();
 
             if (lastSignUsed != 0)
-            {
-                result = pValore / sValore / tValore;
-                risultato.Text = result.ToString();
-                segno.Text = "/";
-            }
+                CheckingLastUsedSign();
 
             lastSignUsed = 4;
             didSignGetPressed = true;
@@ -311,6 +300,9 @@ namespace Calcolatrice
             secondoValore.Text = "";
             risultato.Text = "0";
             uguale.Text = "";
+            pValore = 0;
+            sValore = 0;
+            tValore = 0;
         }
 
         

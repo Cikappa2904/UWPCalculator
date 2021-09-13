@@ -77,51 +77,61 @@
         <Button x:Name="number1" Content="1" FontSize="16px" Click="Button_Click_1" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number1"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad1"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number2" Content="2" FontSize="16px" Click="Button_Click_2" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number2"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad2"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number3" Content="3" FontSize="16px" Click="Button_Click_3" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number3"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad3"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number4" Content="4" FontSize="16px" Click="Button_Click_4" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number4"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad4"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number5" Content="5" FontSize="16px" Click="Button_Click_5" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number5"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad5"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number6" Content="6" FontSize="16px" Click="Button_Click_6" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number6"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad6"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number7" Content="7" FontSize="16px" Click="Button_Click_7" Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number7"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad7"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number8" Content="8" FontSize="16px" Click="Button_Click_8" Grid.Row="3" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number8"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad8"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number9" Content="9" FontSize="16px" Click="Button_Click_9" Grid.Row="3" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number9"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad9"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="number0" Content="0" FontSize="16px" Click="Button_Click_0" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Number0"/>
+                <KeyboardAccelerator Modifiers="None" Key="NumberPad0"/>
             </Button.KeyboardAccelerators>
         </Button>
         <Button x:Name="dot" Content="," FontSize="16px" Click="Button_Click_Dot" Grid.Row="7" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
