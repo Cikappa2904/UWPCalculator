@@ -54,7 +54,9 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="IsTabStop" />
       <RootProperty Name="KeyboardAccelerators" />
+      <RootProperty Name="Opacity" />
       <RootProperty Name="Style" />
       <RootProperty Name="Background" />
       <RootEvent Name="Click" />

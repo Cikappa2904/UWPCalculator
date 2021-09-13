@@ -62,7 +62,7 @@ namespace Calcolatrice
             switch (args.KeyCode)
             {
                 
-                case 8:
+                case 8: //Backspace
                     {
                         if (risultato.Text.Length > 1)
                         {
@@ -74,7 +74,22 @@ namespace Calcolatrice
                         }
                         break;
                     }
-                    
+               /* case 43: //Keyboard Plus Sign 
+                    {
+                        convertingTextBlocks();
+                        if (lastSignUsed != 0)
+                            CheckingLastUsedSign();
+
+                        segno.Text = "+";
+                        lastSignUsed = 1;
+                        didSignGetPressed = true;
+
+                       
+
+                        break;
+                    }*/
+               
+
             }
 
                  
@@ -172,8 +187,9 @@ namespace Calcolatrice
                 break;
     
             }
-
             primoValore.Text = result.ToString();
+            //secondoValore.Text = tValore.ToString();
+            risultato.Text = result.ToString();
         }
 
 
@@ -279,9 +295,6 @@ namespace Calcolatrice
             didSignGetPressed = true;
         }
 
-        
-
-
         private void Button_Click_Division(object sender, RoutedEventArgs e) //tasto +
         {
             convertingTextBlocks();
@@ -303,48 +316,54 @@ namespace Calcolatrice
             pValore = 0;
             sValore = 0;
             tValore = 0;
+            result = 0;
+            lastSignUsed = 0;
         }
-
-        
-
 
         private void Button_Click_Uguale(object sender, RoutedEventArgs e)
         {
             uguale.Text = "=";
-            pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            sValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+            if (primoValore.Text != "")
+            {
+                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+            }
+            if (risultato.Text != "")
+            {
+                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+            }
+
             switch (lastSignUsed)
             {
                 case 1: //Caso 1: addizione
                     {
-                        result = pValore + sValore;
                         primoValore.Text = pValore.ToString();
-                        segno.Text = "+";
-                        secondoValore.Text = sValore.ToString();
+                        result = pValore + tValore;
+                        segno.Text = " + ";
+                        secondoValore.Text = tValore.ToString();
                         break;
                     }
                 case 2: //Caso 2: sottrazione
                     {
-                        result = pValore - sValore;
                         primoValore.Text = pValore.ToString();
+                        result = pValore - tValore;
                         segno.Text = " - ";
-                        secondoValore.Text = sValore.ToString();
+                        secondoValore.Text = tValore.ToString();
                         break;
                     }
                 case 3:
                     {
-                        result = pValore * sValore;
                         primoValore.Text = pValore.ToString();
+                        result = pValore * tValore;
                         segno.Text = " * ";
-                        secondoValore.Text = sValore.ToString();
+                        secondoValore.Text = tValore.ToString();
                         break;
                     }
                 case 4:
                     {
-                        result = pValore / sValore;
                         primoValore.Text = pValore.ToString();
+                        result = pValore / tValore;
                         segno.Text = " / ";
-                        secondoValore.Text = sValore.ToString();
+                        secondoValore.Text = tValore.ToString();
                         break;
                     }
             }
