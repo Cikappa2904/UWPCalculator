@@ -110,10 +110,70 @@ namespace Calcolatrice
                     didSignGetPressed = false;
                 }    
             }
-
            
+        }
 
-            
+
+        void convertingTextBlocks()
+        {
+            if (primoValore.Text != "")
+            {
+                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+            }
+            else
+            {
+                pValore = 0;
+            }
+
+            if (secondoValore.Text != "")
+            {
+                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+            }
+            else
+            {
+                sValore = 0;
+            }
+
+            if (risultato.Text != "")
+            {
+                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+            }
+            else
+            {
+                tValore = 0;
+            }
+
+
+            primoValore.Text = risultato.Text;
+            secondoValore.Text = "";
+            uguale.Text = "";
+        }
+
+        void CheckingLastUsedSign()
+        {
+
+            string temp = segno.Text;
+            switch(temp)
+            {
+                case "+":
+                    result = pValore + sValore + tValore;
+                break;
+
+                case "-":
+                    result = pValore - sValore - tValore;
+                break;
+
+                case "*":
+                    result = pValore * sValore * tValore;
+                break;
+
+                case "/":
+                    result = pValore / sValore / tValore;
+                break;
+    
+            }
+
+            primoValore.Text = result.ToString();
         }
 
 
@@ -173,38 +233,9 @@ namespace Calcolatrice
 
         private void Button_Click(object sender, RoutedEventArgs e) //tasto +
         {
-           
 
-            primoValore.Text = risultato.Text; 
-            secondoValore.Text = "";
-            uguale.Text = "";
 
-            if (primoValore.Text != "")
-            {
-                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                pValore = 0;
-            }
-
-            if (secondoValore.Text != "")
-            {
-                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                sValore = 0;
-            }
-
-            if (risultato.Text != "")
-            {
-                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                tValore = 0;
-            }
+            convertingTextBlocks();
 
             if (lastSignUsed != 0)
             {
@@ -215,54 +246,17 @@ namespace Calcolatrice
                 segno.Text = "+";
                 lastSignUsed = 1;
                 didSignGetPressed = true;
-            
-            
-            
-
-            
-            
         }
 
         private void Button_Click_Minus(object sender, RoutedEventArgs e) //tasto -
         {
-            primoValore.Text = risultato.Text;
-            secondoValore.Text = "";
-            uguale.Text = "";
 
-            if (primoValore.Text != "")
-            {
-                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                pValore = 0;
-            }
 
-            if (secondoValore.Text != "")
-            {
-                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                sValore = 0;
-            }
+            convertingTextBlocks();
+            CheckingLastUsedSign();
 
-            if (risultato.Text != "")
-            {
-                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                tValore = 0;
-            }
 
-            if (lastSignUsed != 0)
-            {
-                result = pValore - sValore - tValore;
-                risultato.Text = result.ToString();
-                segno.Text = "-";
-            }
-
+            segno.Text = "-";
             lastSignUsed = 2;
             didSignGetPressed = true;
         }
@@ -278,44 +272,16 @@ namespace Calcolatrice
 
         private void Button_Click_Multiply(object sender, RoutedEventArgs e) //tasto +
         {
-            primoValore.Text = risultato.Text;
-            secondoValore.Text = "";
-            uguale.Text = "";
-
-            if (primoValore.Text != "")
-            {
-                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                pValore = 0;
-            }
-
-            if (secondoValore.Text != "")
-            {
-                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                sValore = 0;
-            }
-
-            if (risultato.Text != "")
-            {
-                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                tValore = 0;
-            }
+            convertingTextBlocks();
 
             if (lastSignUsed != 0)
             {
                 result = pValore * sValore * tValore;
                 risultato.Text = result.ToString();
-                segno.Text = "*";
+                
             }
 
+            segno.Text = "*";
             lastSignUsed = 3;
             didSignGetPressed = true;
         }
@@ -325,36 +291,7 @@ namespace Calcolatrice
 
         private void Button_Click_Division(object sender, RoutedEventArgs e) //tasto +
         {
-            primoValore.Text = risultato.Text;
-            secondoValore.Text = "";
-            uguale.Text = "";
-
-            if (primoValore.Text != "")
-            {
-                pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                pValore = 0;
-            }
-
-            if (secondoValore.Text != "")
-            {
-                sValore = double.Parse(secondoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                sValore = 0;
-            }
-
-            if (risultato.Text != "")
-            {
-                tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
-            }
-            else
-            {
-                tValore = 0;
-            }
+            convertingTextBlocks();
 
             if (lastSignUsed != 0)
             {

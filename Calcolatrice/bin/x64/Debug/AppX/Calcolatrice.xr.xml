@@ -74,16 +74,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Microsoft.UI.Xaml.Controls.NavigationView">
-      <RootProperty Name="MenuItems" />
-      <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Microsoft.UI.Xaml.Controls.NavigationViewItem">
-      <RootProperty Name="Icon" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Tag" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
     </RootType>
