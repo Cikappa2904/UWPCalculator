@@ -2,12 +2,13 @@
     x:Class="Calcolatrice.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Calcolatrice"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Calcolatrice"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:muxc="using:Microsoft.UI.Xaml.Controls" xmlns:media="using:Microsoft.UI.Xaml.Media"
-    mc:Ignorable="d"
-    Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}">
+    xmlns:media="using:Microsoft.UI.Xaml.Media"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}"
+    mc:Ignorable="d">
 
 
 
@@ -15,58 +16,25 @@
 
 
     <Grid ColumnSpacing="10.0" RowSpacing="10.0">
-        <!-- Roba di Blend -->
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="VisualStateGroup">
-                <VisualState x:Name="Small">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0" MinWindowHeight="0"/>
-                    </VisualState.StateTriggers>
-                </VisualState>
-                <VisualState x:Name="BiggerThanSmall">
-                    <VisualState.Setters>
-                        <Setter Target="number7.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number9.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number8.(Control.FontSize)" Value="24"/>
-                        <Setter Target="BottonePiu.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number4.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number5.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number6.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button1.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number1.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number2.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number3.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button2.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button.(Control.FontSize)" Value="24"/>
-                        <Setter Target="number0.(Control.FontSize)" Value="24"/>
-                        <Setter Target="equal_sign.(Control.FontSize)" Value="24"/>
-                        <Setter Target="button3.(Control.FontSize)" Value="24"/>
-                    </VisualState.Setters>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0" MinWindowHeight="500"/>
-                    </VisualState.StateTriggers>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-        <!-- Roba di Blend -->
+        <!--  Roba di Blend  -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
 
         </Grid.RowDefinitions>
 
@@ -74,143 +42,403 @@
 
 
 
-        <Button x:Name="number1" Content="1" FontSize="16px" Click="Button_Click_1" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number1"
+            Grid.Row="5"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_1"
+            Content="1"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number1"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad1"/>
+                <KeyboardAccelerator Key="Number1" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad1" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number2" Content="2" FontSize="16px" Click="Button_Click_2" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number2"
+            Grid.Row="5"
+            Grid.Column="2"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_2"
+            Content="2"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number2"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad2"/>
+                <KeyboardAccelerator Key="Number2" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad2" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number3" Content="3" FontSize="16px" Click="Button_Click_3" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number3"
+            Grid.Row="5"
+            Grid.Column="3"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_3"
+            Content="3"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number3"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad3"/>
+                <KeyboardAccelerator Key="Number3" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad3" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number4" Content="4" FontSize="16px" Click="Button_Click_4" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number4"
+            Grid.Row="4"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_4"
+            Content="4"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number4"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad4"/>
+                <KeyboardAccelerator Key="Number4" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad4" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number5" Content="5" FontSize="16px" Click="Button_Click_5" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number5"
+            Grid.Row="4"
+            Grid.Column="2"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_5"
+            Content="5"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number5"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad5"/>
+                <KeyboardAccelerator Key="Number5" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad5" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number6" Content="6" FontSize="16px" Click="Button_Click_6" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number6"
+            Grid.Row="4"
+            Grid.Column="3"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_6"
+            Content="6"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number6"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad6"/>
+                <KeyboardAccelerator Key="Number6" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad6" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number7" Content="7" FontSize="16px" Click="Button_Click_7" Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number7"
+            Grid.Row="3"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_7"
+            Content="7"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number7"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad7"/>
+                <KeyboardAccelerator Key="Number7" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad7" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number8" Content="8" FontSize="16px" Click="Button_Click_8" Grid.Row="3" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number8"
+            Grid.Row="3"
+            Grid.Column="2"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_8"
+            Content="8"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number8"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad8"/>
+                <KeyboardAccelerator Key="Number8" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad8" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number9" Content="9" FontSize="16px" Click="Button_Click_9" Grid.Row="3" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number9"
+            Grid.Row="3"
+            Grid.Column="3"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_9"
+            Content="9"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number9"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad9"/>
+                <KeyboardAccelerator Key="Number9" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad9" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="number0" Content="0" FontSize="16px" Click="Button_Click_0" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="number0"
+            Grid.Row="6"
+            Grid.Column="2"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_0"
+            Content="0"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number0"/>
-                <KeyboardAccelerator Modifiers="None" Key="NumberPad0"/>
+                <KeyboardAccelerator Key="Number0" Modifiers="None" />
+                <KeyboardAccelerator Key="NumberPad0" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="dot" Content="," FontSize="16px" Click="Button_Click_Dot" Grid.Row="7" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" IsTabStop="False">
-            <!--<Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Number0"/>
-            </Button.KeyboardAccelerators>-->
-        </Button>
+        <Button
+            x:Name="dot"
+            Grid.Row="7"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_Dot"
+            Content=","
+            FontSize="16px"
+            IsTabStop="False" />
 
-        <TextBlock x:Name="risultato" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="1" Text="risultato" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="36" Grid.ColumnSpan="5" TextAlignment="Right" Margin="0,0,20,0" FontWeight="Bold" Grid.RowSpan="2"/>
+        <TextBlock
+            x:Name="risultato"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="5"
+            Margin="0,0,20,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            FontSize="36"
+            FontWeight="Bold"
+            Text="risultato"
+            TextAlignment="Right"
+            TextWrapping="Wrap" />
 
         <!--<TextBlock x:Name="secondoValore" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3" Text="secondoValore" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="28" Grid.ColumnSpan="2" Visibility="Collapsed" />-->
 
-        <Button x:Name="equal_sign" Content="=" FontSize="16px" Grid.Row="6" Grid.Column="3" VerticalAlignment="Stretch" Click="Button_Click_Uguale" HorizontalAlignment="Stretch" Style="{StaticResource AccentButtonStyle}" IsTabStop="False">
+        <Button
+            x:Name="equal_sign"
+            Grid.Row="6"
+            Grid.Column="3"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_Uguale"
+            Content="="
+            FontSize="16px"
+            IsTabStop="False"
+            Style="{StaticResource AccentButtonStyle}">
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Enter"/>
+                <KeyboardAccelerator Key="Enter" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="BottonePiu" Content="+" FontSize="16px" Grid.Row="3" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="BottonePiu"
+            Grid.Row="3"
+            Grid.Column="4"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click"
+            Content="+"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.Background>
-                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
+                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}" />
             </Button.Background>
-            <Button.KeyboardAccelerators>
+            <!--<Button.KeyboardAccelerators>
                 <KeyboardAccelerator Modifiers="None" Key="Add"/>
-            </Button.KeyboardAccelerators>
+            </Button.KeyboardAccelerators>-->
         </Button>
-        <Button x:Name="button1" Content="-" FontSize="16px" Grid.Row="4" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click_Minus" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="button1"
+            Grid.Row="4"
+            Grid.Column="4"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_Minus"
+            Content="-"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.Background>
-                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
+                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}" />
             </Button.Background>
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Subtract"/>
+                <KeyboardAccelerator Key="Subtract" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="button2" Content="*" FontSize="16px" Grid.Row="5" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click_Multiply" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="button2"
+            Grid.Row="5"
+            Grid.Column="4"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_Multiply"
+            Content="*"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.Background>
-                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
+                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}" />
             </Button.Background>
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Multiply"/>
+                <KeyboardAccelerator Key="Multiply" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <Button x:Name="button3" Content="/" FontSize="16px" Grid.Row="6" Grid.Column="4" VerticalAlignment="Stretch" Click="Button_Click_Division" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="button3"
+            Grid.Row="6"
+            Grid.Column="4"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_Division"
+            Content="/"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.Background>
-                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
+                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}" />
             </Button.Background>
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Divide"/>
+                <KeyboardAccelerator Key="Divide" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
 
 
-        <Button x:Name="button" Content="C" FontSize="16px" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch" Click="Button_Click_Delete" HorizontalAlignment="Stretch" IsTabStop="False">
+        <Button
+            x:Name="button"
+            Grid.Row="6"
+            Grid.Column="1"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="Button_Click_Delete"
+            Content="C"
+            FontSize="16px"
+            IsTabStop="False">
             <Button.Background>
-                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}"/>
+                <SolidColorBrush Color="{ThemeResource SystemAltLowColor}" />
             </Button.Background>
             <Button.KeyboardAccelerators>
-                <KeyboardAccelerator Modifiers="None" Key="Delete"/>
+                <KeyboardAccelerator Key="Delete" Modifiers="None" />
             </Button.KeyboardAccelerators>
         </Button>
-        <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Right">
-            <TextBlock x:Name="primoValore" Text="primoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,0" />
-            <TextBlock x:Name="segno" Text="segno" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,0" />
-            <TextBlock x:Name="secondoValore" Text="secondoValore" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10,0,0,0" />
-            <TextBlock x:Name="uguale" Text="uguale" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10,0,0,0" />
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Right"
+            Orientation="Horizontal">
+            <TextBlock
+                x:Name="primoValore"
+                Margin="0,0,10,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="16"
+                Text="primoValore"
+                TextWrapping="Wrap" />
+            <TextBlock
+                x:Name="segno"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="16"
+                Text="segno"
+                TextWrapping="Wrap" />
+            <TextBlock
+                x:Name="secondoValore"
+                Margin="10,0,0,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="16"
+                Text="secondoValore"
+                TextWrapping="Wrap" />
+            <TextBlock
+                x:Name="uguale"
+                Margin="10,0,0,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                FontSize="16"
+                Text="uguale"
+                TextWrapping="Wrap" />
         </StackPanel>
-
-
-       
-
-
-
-
-
-
-
-
+        <!--  Roba di Blend  -->
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Small">
+                    <VisualState.Setters>
+                        <Setter Target="number7.(Control.FontSize)" Value="12" />
+                        <Setter Target="number8.(Control.FontSize)" Value="12" />
+                        <Setter Target="number9.(Control.FontSize)" Value="12" />
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="12" />
+                        <Setter Target="number4.(Control.FontSize)" Value="12" />
+                        <Setter Target="number5.(Control.FontSize)" Value="12" />
+                        <Setter Target="number6.(Control.FontSize)" Value="12" />
+                        <Setter Target="button1.(Control.FontSize)" Value="12" />
+                        <Setter Target="number1.(Control.FontSize)" Value="12" />
+                        <Setter Target="number2.(Control.FontSize)" Value="12" />
+                        <Setter Target="number3.(Control.FontSize)" Value="12" />
+                        <Setter Target="button2.(Control.FontSize)" Value="12" />
+                        <Setter Target="button.(Control.FontSize)" Value="12" />
+                        <Setter Target="number0.(Control.FontSize)" Value="12" />
+                        <Setter Target="equal_sign.(Control.FontSize)" Value="12" />
+                        <Setter Target="button3.(Control.FontSize)" Value="12" />
+                        <Setter Target="dot.(Control.FontSize)" Value="12" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="0" MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="BiggerThanSmall">
+                    <VisualState.Setters>
+                        <Setter Target="number7.(Control.FontSize)" Value="24" />
+                        <Setter Target="number9.(Control.FontSize)" Value="24" />
+                        <Setter Target="number8.(Control.FontSize)" Value="24" />
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="24" />
+                        <Setter Target="number4.(Control.FontSize)" Value="24" />
+                        <Setter Target="number5.(Control.FontSize)" Value="24" />
+                        <Setter Target="number6.(Control.FontSize)" Value="24" />
+                        <Setter Target="button1.(Control.FontSize)" Value="24" />
+                        <Setter Target="number1.(Control.FontSize)" Value="24" />
+                        <Setter Target="number2.(Control.FontSize)" Value="24" />
+                        <Setter Target="number3.(Control.FontSize)" Value="24" />
+                        <Setter Target="button2.(Control.FontSize)" Value="24" />
+                        <Setter Target="button.(Control.FontSize)" Value="24" />
+                        <Setter Target="number0.(Control.FontSize)" Value="24" />
+                        <Setter Target="equal_sign.(Control.FontSize)" Value="24" />
+                        <Setter Target="button3.(Control.FontSize)" Value="24" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="500" MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Big">
+                    <VisualState.Setters>
+                        <Setter Target="number7.(Control.FontSize)" Value="36" />
+                        <Setter Target="number9.(Control.FontSize)" Value="36" />
+                        <Setter Target="number8.(Control.FontSize)" Value="36" />
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="36" />
+                        <Setter Target="number4.(Control.FontSize)" Value="36" />
+                        <Setter Target="number5.(Control.FontSize)" Value="36" />
+                        <Setter Target="number6.(Control.FontSize)" Value="36" />
+                        <Setter Target="button1.(Control.FontSize)" Value="36" />
+                        <Setter Target="number1.(Control.FontSize)" Value="36" />
+                        <Setter Target="number2.(Control.FontSize)" Value="36" />
+                        <Setter Target="number3.(Control.FontSize)" Value="36" />
+                        <Setter Target="button2.(Control.FontSize)" Value="36" />
+                        <Setter Target="button.(Control.FontSize)" Value="36" />
+                        <Setter Target="number0.(Control.FontSize)" Value="36" />
+                        <Setter Target="equal_sign.(Control.FontSize)" Value="36" />
+                        <Setter Target="button3.(Control.FontSize)" Value="36" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="800" MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Grid>
 
-  
+
 
 
 
@@ -219,6 +447,5 @@
 </Page>
 
 
-    
-    
-    
+
+

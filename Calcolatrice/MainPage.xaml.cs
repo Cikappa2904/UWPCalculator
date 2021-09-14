@@ -28,6 +28,7 @@ namespace Calcolatrice
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        //Variables declarations
         bool didEqualGetPressed = false, didSignGetPressed = false;
         int lastSignUsed;
         double result, pValore = 0, sValore = 0, tValore = 0;
@@ -37,18 +38,20 @@ namespace Calcolatrice
         {
             this.InitializeComponent();
 
-            var coreTitleBar = CoreApplication.GetCurrentView().TitleBar; //make titlebar acrylic
+            var coreTitleBar = CoreApplication.GetCurrentView().TitleBar; //Make titlebar acrylic
             coreTitleBar.ExtendViewIntoTitleBar = true;
 
-            var view = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView(); //make button acrylic
+            var view = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView(); //Make button acrylic
             view.TitleBar.ButtonBackgroundColor = Windows.UI.Colors.Transparent;
             view.TitleBar.ButtonInactiveBackgroundColor = Windows.UI.Colors.Transparent;
 
+            //Setting all the TextBlocks to blank (not doing this in XAML so it's easier to work on the designer)
             primoValore.Text = "";
             risultato.Text = "0";
             segno.Text = "";
             secondoValore.Text = "";
             uguale.Text = "";
+
             Window.Current.CoreWindow.CharacterReceived += CoreWindow_CharacterReceived;
             
 
@@ -58,7 +61,7 @@ namespace Calcolatrice
 
         private void CoreWindow_CharacterReceived(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.CharacterReceivedEventArgs args)
         {
-
+            //Make keyboard shortcuts work for stuff that doesn't work as KeyboardAccelerator
             switch (args.KeyCode)
             {
                 
@@ -74,20 +77,19 @@ namespace Calcolatrice
                         }
                         break;
                     }
-               /* case 43: //Keyboard Plus Sign 
+                case 43: //Keyboard Plus Sign 
                     {
-                        convertingTextBlocks();
-                        if (lastSignUsed != 0)
-                            CheckingLastUsedSign();
-
-                        segno.Text = "+";
-                        lastSignUsed = 1;
-                        didSignGetPressed = true;
-
-                       
-
+                        MathOperation("+");
                         break;
-                    }*/
+                    }
+                case 46: // ',' sign
+                    {
+                        if (!risultato.Text.Contains(","))
+                        {
+                            equalClear(",");
+                        }
+                        break;
+                    }
                
 
             }
@@ -96,7 +98,7 @@ namespace Calcolatrice
             
         } 
 
-        void equalClear(string a) //Funzione che controlla se è stato premuto il tasto uguale o un segno, in modo da capire se la prossima volta che si digita un numero bisogna cancellare la textbox
+        void equalClear(string a)//Function to check if we pressed Equal or a sign, in order to understand if the main TextBlock (risultato) should be cleaned before putting the number
         {
             if (risultato.Text.Length < 15)
             {
@@ -127,9 +129,8 @@ namespace Calcolatrice
             }
            
         }
-
-
-        void convertingTextBlocks()
+        
+        void convertingTextBlocks()//Function that converts TextBlock values to "doubles"
         {
             if (primoValore.Text != "")
             {
@@ -164,10 +165,10 @@ namespace Calcolatrice
             uguale.Text = "";
         }
 
-        void CheckingLastUsedSign()
+        void CheckingLastUsedSign(string temp)//Function called when pressing a sign that checks if a sign has been pressed before in order to know if the previous operating needs to be executed or not
         {
 
-            string temp = segno.Text;
+            
             switch(temp)
             {
                 case "+":
@@ -192,6 +193,41 @@ namespace Calcolatrice
             risultato.Text = result.ToString();
         }
 
+        void MathOperation(string sign)
+        {
+            convertingTextBlocks();
+            if (lastSignUsed != 0)
+                CheckingLastUsedSign(sign);
+
+
+            segno.Text = " " + sign + " ";
+            switch (sign)
+            {
+                case "+":
+                    {
+                        lastSignUsed = 1;
+                        break;
+                    }
+                case "-":
+                    {
+                        lastSignUsed = 2;
+                        break;
+                    }
+                case "*":
+                    {
+                        lastSignUsed = 3;
+                        break;
+                    }
+                case "/":
+                    {
+                        lastSignUsed = 4;
+                        break;
+                    }
+
+            }
+            
+            didSignGetPressed = true;
+        }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -249,29 +285,12 @@ namespace Calcolatrice
 
         private void Button_Click(object sender, RoutedEventArgs e) //tasto +
         {
-
-
-            convertingTextBlocks();
-            if (lastSignUsed != 0)
-                CheckingLastUsedSign();
-
-            segno.Text = "+";
-                lastSignUsed = 1;
-                didSignGetPressed = true;
+            MathOperation("+");
         }
 
         private void Button_Click_Minus(object sender, RoutedEventArgs e) //tasto -
         {
-
-
-            convertingTextBlocks();
-            if (lastSignUsed!=0)
-                CheckingLastUsedSign();
-
-
-            segno.Text = "-";
-            lastSignUsed = 2;
-            didSignGetPressed = true;
+            MathOperation("-");
         }
 
         private void Button_Click_Dot(object sender, RoutedEventArgs e)
@@ -285,25 +304,12 @@ namespace Calcolatrice
 
         private void Button_Click_Multiply(object sender, RoutedEventArgs e) //tasto +
         {
-            convertingTextBlocks();
-
-            if (lastSignUsed != 0)
-                CheckingLastUsedSign();
-
-            segno.Text = "*";
-            lastSignUsed = 3;
-            didSignGetPressed = true;
+            MathOperation("*");
         }
 
         private void Button_Click_Division(object sender, RoutedEventArgs e) //tasto +
         {
-            convertingTextBlocks();
-
-            if (lastSignUsed != 0)
-                CheckingLastUsedSign();
-
-            lastSignUsed = 4;
-            didSignGetPressed = true;
+            MathOperation("/");
         }
 
         private void Button_Click_Delete(object sender, RoutedEventArgs e) //deletes everything and reset the main TextBlock (risultato) to 0
@@ -322,7 +328,7 @@ namespace Calcolatrice
 
         private void Button_Click_Uguale(object sender, RoutedEventArgs e)
         {
-            uguale.Text = "=";
+            
             if (primoValore.Text != "")
             {
                 pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
@@ -334,12 +340,18 @@ namespace Calcolatrice
 
             switch (lastSignUsed)
             {
+                case 0:
+                    {
+                        break;
+                    }
                 case 1: //Caso 1: addizione
                     {
                         primoValore.Text = pValore.ToString();
                         result = pValore + tValore;
                         segno.Text = " + ";
                         secondoValore.Text = tValore.ToString();
+                        risultato.Text = result.ToString();
+                        uguale.Text = "=";
                         break;
                     }
                 case 2: //Caso 2: sottrazione
@@ -348,6 +360,8 @@ namespace Calcolatrice
                         result = pValore - tValore;
                         segno.Text = " - ";
                         secondoValore.Text = tValore.ToString();
+                        uguale.Text = "=";
+                        risultato.Text = result.ToString();
                         break;
                     }
                 case 3:
@@ -356,6 +370,8 @@ namespace Calcolatrice
                         result = pValore * tValore;
                         segno.Text = " * ";
                         secondoValore.Text = tValore.ToString();
+                        uguale.Text = "=";
+                        risultato.Text = result.ToString();
                         break;
                     }
                 case 4:
@@ -364,11 +380,13 @@ namespace Calcolatrice
                         result = pValore / tValore;
                         segno.Text = " / ";
                         secondoValore.Text = tValore.ToString();
+                        uguale.Text = "=";
+                        risultato.Text = result.ToString();
                         break;
                     }
             }
-           
-            risultato.Text = result.ToString();
+                     
+            
             didEqualGetPressed = true;
             lastSignUsed = 0;
 
