@@ -15,6 +15,7 @@
 
 
 
+
     <Grid ColumnSpacing="10.0" RowSpacing="10.0">
         <!--  Roba di Blend  -->
         <Grid.ColumnDefinitions>
@@ -265,9 +266,9 @@
             <Button.Background>
                 <SolidColorBrush Color="{ThemeResource SystemAltLowColor}" />
             </Button.Background>
-            <Button.KeyboardAccelerators>
+            <!--<Button.KeyboardAccelerators>
                 <KeyboardAccelerator Key="Subtract" Modifiers="None" />
-            </Button.KeyboardAccelerators>
+            </Button.KeyboardAccelerators>-->
         </Button>
         <Button x:ConnectionId='17'
             x:Name="button2"
@@ -282,9 +283,9 @@
             <Button.Background>
                 <SolidColorBrush Color="{ThemeResource SystemAltLowColor}" />
             </Button.Background>
-            <Button.KeyboardAccelerators>
+            <!--<Button.KeyboardAccelerators>
                 <KeyboardAccelerator Key="Multiply" Modifiers="None" />
-            </Button.KeyboardAccelerators>
+            </Button.KeyboardAccelerators>-->
         </Button>
         <Button x:ConnectionId='18'
             x:Name="button3"
@@ -299,9 +300,9 @@
             <Button.Background>
                 <SolidColorBrush Color="{ThemeResource SystemAltLowColor}" />
             </Button.Background>
-            <Button.KeyboardAccelerators>
+            <!--<Button.KeyboardAccelerators>
                 <KeyboardAccelerator Key="Divide" Modifiers="None" />
-            </Button.KeyboardAccelerators>
+            </Button.KeyboardAccelerators>-->
         </Button>
 
 
@@ -361,6 +362,26 @@
                 Text="uguale"
                 TextWrapping="Wrap" />
         </StackPanel>
+
+        <!--<muxc:NavigationView
+            Grid.Row="0"
+            Grid.RowSpan="9"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            IsBackButtonVisible="Collapsed"
+            IsPaneOpen="False"
+            PaneDisplayMode="LeftMinimal">
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem
+                    Content="Main Page"
+                    Icon="Home"
+                    Tag="MainPage" />
+            </muxc:NavigationView.MenuItems>
+        </muxc:NavigationView>-->
+
+        <!--  SelectionChanged="NavigationView_SelectionChanged"  -->
+
+
         <!--  Roba di Blend  -->
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:ConnectionId='24' x:Name="VisualStateGroup">
@@ -437,7 +458,6 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
     </Grid>
-
 
 
 

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>8607D4299B442D4BDC8E7E42607DF34990EE11CCFEAD8BABAB1B3A08FA8E2801</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>557BC939BDF757AD1CC8D2A7187CCAFA69F310108E2E59D4822A943A0A70C168</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>79283cc5-be5a-4053-bcc3-f6e604d144be_0.1.1.0_x64__t7ts6zhfm7dxy</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>79283cc5-be5a-4053-bcc3-f6e604d144be_t7ts6zhfm7dxy!App</RegisteredUserModeAppID>
     <RegisteredPackageID>79283cc5-be5a-4053-bcc3-f6e604d144be</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-09-13T19:41:06.110</Modified>
+      <Modified>2021-09-16T08:03:13.569</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.exe">
       <PackagePath>entrypoint\Calcolatrice.exe</PackagePath>
-      <Modified>2021-09-13T19:41:05.068</Modified>
+      <Modified>2021-09-16T08:03:12.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,15 +86,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.xr.xml">
       <PackagePath>Calcolatrice.xr.xml</PackagePath>
-      <Modified>2021-09-13T19:27:24.509</Modified>
+      <Modified>2021-09-16T08:03:12.082</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-09-13T19:41:04.994</Modified>
+      <Modified>2021-09-16T05:05:36.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-09-13T19:41:04.993</Modified>
+      <Modified>2021-09-16T08:03:12.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -106,60 +106,60 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-09-13T19:19:31.473</Modified>
+      <Modified>2021-09-16T04:54:02.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\Calcolatrice.exe">
       <PackagePath>Calcolatrice.exe</PackagePath>
-      <Modified>2021-09-13T19:41:06.102</Modified>
+      <Modified>2021-09-16T08:03:13.559</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+    <AppxPackagedFile Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
-      <Modified>2021-07-07T10:29:40.000</Modified>
+      <Modified>2021-09-14T09:06:08.000</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.6.appx">
-      <Name>Microsoft.UI.Xaml.2.6</Name>
-      <Version>2.62107.6002.0</Version>
+    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.6, MinVersion = 2.62107.6002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.6.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.6.appx">
-      <Name>Microsoft.UI.Xaml.2.6</Name>
-      <Version>2.62107.6002.0</Version>
+    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
       <Architecture>Win32</Architecture>
-      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.6, MinVersion = 2.62107.6002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.6.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.6.appx">
-      <Name>Microsoft.UI.Xaml.2.6</Name>
-      <Version>2.62107.6002.0</Version>
+    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.6, MinVersion = 2.62107.6002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.6.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.6.appx">
-      <Name>Microsoft.UI.Xaml.2.6</Name>
-      <Version>2.62107.6002.0</Version>
+    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
       <Architecture>arm</Architecture>
-      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.6, MinVersion = 2.62107.6002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.6.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.6.appx">
-      <Name>Microsoft.UI.Xaml.2.6</Name>
-      <Version>2.62107.6002.0</Version>
+    <ResolvedSDKReference Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2109.13004.0</Version>
       <Architecture>arm64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.6, MinVersion = 2.62107.6002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.6.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2109.13004.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>

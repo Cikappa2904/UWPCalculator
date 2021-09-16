@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PmEvQP9Es0P1QllmKB/4wkLAcjDVoneTkoCogX93c8JDQGVduB7UEG49yvJubrDqa3D6wCFzyB52Z5C3PA12cg==",
+  "dgSpecHash": "th0vR4Ahu1HWv1wfbaqAK2OBVDUq3wsYuvq0yybMn/xBIoJh06KRwzFT3ZsVDXt12eoUSWpNt0MUDT5cKs4LqQ==",
   "success": true,
   "projectFilePath": "D:\\File Personali\\Github\\UWPCalculator\\Calcolatrice\\Calcolatrice.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Users\\cikap\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.universalwindowsplatform\\6.2.12\\microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
-    "C:\\Users\\cikap\\.nuget\\packages\\microsoft.ui.xaml\\2.6.1\\microsoft.ui.xaml.2.6.1.nupkg.sha512",
+    "C:\\Users\\cikap\\.nuget\\packages\\microsoft.ui.xaml\\2.7.0\\microsoft.ui.xaml.2.7.0.nupkg.sha512",
     "C:\\Users\\cikap\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.10-rel-29722-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",

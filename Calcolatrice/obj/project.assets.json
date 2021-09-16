@@ -203,7 +203,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.UI.Xaml/2.6.1": {
+      "Microsoft.UI.Xaml/2.7.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
@@ -523,7 +523,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.UI.Xaml/2.6.1": {
+      "Microsoft.UI.Xaml/2.7.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
@@ -1021,7 +1021,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.UI.Xaml/2.6.1": {
+      "Microsoft.UI.Xaml/2.7.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
@@ -1520,7 +1520,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.UI.Xaml/2.6.1": {
+      "Microsoft.UI.Xaml/2.7.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
@@ -2019,7 +2019,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.UI.Xaml/2.6.1": {
+      "Microsoft.UI.Xaml/2.7.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
@@ -2517,7 +2517,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.UI.Xaml/2.6.1": {
+      "Microsoft.UI.Xaml/2.7.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
@@ -3016,7 +3016,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.UI.Xaml/2.6.1": {
+      "Microsoft.UI.Xaml/2.7.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
@@ -3514,7 +3514,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.UI.Xaml/2.6.1": {
+      "Microsoft.UI.Xaml/2.7.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
@@ -4193,10 +4193,10 @@
         "runtime.json"
       ]
     },
-    "Microsoft.UI.Xaml/2.6.1": {
-      "sha512": "/vvUMS0MklrlaYA+qEB/4Yo6k2yeBImJHJD1VAGT9GL4DeTEw78qX6axjFNhwFwyaACDxX1JU+kN14q7wA4olQ==",
+    "Microsoft.UI.Xaml/2.7.0": {
+      "sha512": "dB4im13tfmMgL/V3Ei+3kD2rUF+/lTxAmR4gjJ45l577eljHfdo/KUrxpq/3I1Vp6e5GCDG1evDaEGuDxypLMg==",
       "type": "package",
-      "path": "microsoft.ui.xaml/2.6.1",
+      "path": "microsoft.ui.xaml/2.7.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4214,13 +4214,13 @@
         "lib/uap10.0/Microsoft.UI.Xaml.xml",
         "lib/uap10.0/Microsoft.UI.Xaml/Themes/Generic.xaml",
         "license.txt",
-        "microsoft.ui.xaml.2.6.1.nupkg.sha512",
+        "microsoft.ui.xaml.2.7.0.nupkg.sha512",
         "microsoft.ui.xaml.nuspec",
         "readme.txt",
-        "tools/AppX/arm/Release/Microsoft.UI.Xaml.2.6.appx",
-        "tools/AppX/arm64/Release/Microsoft.UI.Xaml.2.6.appx",
-        "tools/AppX/x64/Release/Microsoft.UI.Xaml.2.6.appx",
-        "tools/AppX/x86/Release/Microsoft.UI.Xaml.2.6.appx",
+        "tools/AppX/arm/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/arm64/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/x64/Release/Microsoft.UI.Xaml.2.7.appx",
+        "tools/AppX/x86/Release/Microsoft.UI.Xaml.2.7.appx",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
@@ -8282,7 +8282,7 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
-      "Microsoft.UI.Xaml >= 2.6.1"
+      "Microsoft.UI.Xaml >= 2.7.0"
     ]
   },
   "packageFolders": {
@@ -8331,7 +8331,7 @@
           },
           "Microsoft.UI.Xaml": {
             "target": "Package",
-            "version": "[2.6.1, )"
+            "version": "[2.7.0, )"
           }
         },
         "imports": [

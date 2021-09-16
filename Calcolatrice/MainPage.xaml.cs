@@ -82,6 +82,21 @@ namespace Calcolatrice
                         MathOperation("+");
                         break;
                     }
+                case 45: //Keyboard Minus Sign 
+                    {
+                        MathOperation("-");
+                        break;
+                    }
+                case 42: //Keyboard Multiply Sign 
+                    {
+                        MathOperation("*");
+                        break;
+                    }
+                case 47: //Keyboard Divide Sign 
+                    {
+                        MathOperation("/");
+                        break;
+                    }
                 case 46: // ',' sign
                     {
                         if (!risultato.Text.Contains(","))
@@ -392,7 +407,13 @@ namespace Calcolatrice
 
         }
 
-        
+        /*private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+            if(args.IsSettingsSelected)
+            {
+                Console.WriteLine("ciao");
+            }
+        }*/
 
 
     }
