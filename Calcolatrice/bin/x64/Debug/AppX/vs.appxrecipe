@@ -19,24 +19,24 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>557BC939BDF757AD1CC8D2A7187CCAFA69F310108E2E59D4822A943A0A70C168</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>79283cc5-be5a-4053-bcc3-f6e604d144be_0.1.1.0_x64__t7ts6zhfm7dxy</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>57B97B491F486D2BE5C1EDB6FF6F087EC63067204F44927B91E34ED1559CC58F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>79283cc5-be5a-4053-bcc3-f6e604d144be_0.2.0.0_x64__t7ts6zhfm7dxy</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>79283cc5-be5a-4053-bcc3-f6e604d144be_t7ts6zhfm7dxy!App</RegisteredUserModeAppID>
     <RegisteredPackageID>79283cc5-be5a-4053-bcc3-f6e604d144be</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=cikap</RegisteredPackagePublisher>
-    <RegisteredVersion>0.1.1.0</RegisteredVersion>
+    <RegisteredVersion>0.2.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-09-16T08:03:13.569</Modified>
+      <Modified>2021-09-24T08:50:51.919</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.exe">
       <PackagePath>entrypoint\Calcolatrice.exe</PackagePath>
-      <Modified>2021-09-16T08:03:12.204</Modified>
+      <Modified>2021-09-24T08:50:51.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,15 +86,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice.xr.xml">
       <PackagePath>Calcolatrice.xr.xml</PackagePath>
-      <Modified>2021-09-16T08:03:12.082</Modified>
+      <Modified>2021-09-24T08:50:50.914</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-09-16T05:05:36.089</Modified>
+      <Modified>2021-09-24T08:25:28.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-09-16T08:03:12.108</Modified>
+      <Modified>2021-09-24T08:50:50.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -106,11 +106,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-09-16T04:54:02.719</Modified>
+      <Modified>2021-09-17T15:50:35.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\Calcolatrice.exe">
       <PackagePath>Calcolatrice.exe</PackagePath>
-      <Modified>2021-09-16T08:03:13.559</Modified>
+      <Modified>2021-09-24T08:50:51.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cikap\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

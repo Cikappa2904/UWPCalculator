@@ -186,21 +186,21 @@ namespace Calcolatrice
             
             switch(temp)
             {
-                case "+":
+                case " + ":
                     result = pValore + tValore;
-                break;
+                    break;
 
-                case "-":
+                case " - ":
                     result = pValore - tValore;
-                break;
+                    break;
 
-                case "*":
+                case " * ":
                     result = pValore * tValore;
-                break;
+                    break;
 
-                case "/":
+                case " / ":
                     result = pValore / tValore;
-                break;
+                    break;
     
             }
             primoValore.Text = result.ToString();
@@ -212,7 +212,7 @@ namespace Calcolatrice
         {
             convertingTextBlocks();
             if (lastSignUsed != 0)
-                CheckingLastUsedSign(sign);
+                CheckingLastUsedSign(segno.Text);
 
 
             segno.Text = " " + sign + " ";

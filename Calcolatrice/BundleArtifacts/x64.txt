@@ -1,2 +1,1 @@
-MainPackage=D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice_0.1.1.0_x64_Debug.msix
-SymbolPackage=D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Symbols\Calcolatrice_0.1.1.0_x64_Debug.appxsym
+MainPackage=D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calcolatrice_0.2.0.0_x64_Debug.msix

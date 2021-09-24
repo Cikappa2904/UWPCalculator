@@ -137,3 +137,4 @@ D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\MultipleQualif
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\ProjectArchitectures.txt
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
 C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\ForBundle\AppxManifest.xml
+D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\ForBundle\AppxManifest.xml
