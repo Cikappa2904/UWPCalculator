@@ -138,3 +138,13 @@ D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\ProjectArchite
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424743200000000.json
 C:\Users\cikap\Documents\GitHub\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\ForBundle\AppxManifest.xml
 D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Core\ForBundle\AppxManifest.xml
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Settings.g.i.cs
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Settings.g.cs
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Settings.xaml
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Settings.xbf
+D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Settings.xbf
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Calculator.xaml
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Calculator.xbf
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Calculator.g.i.cs
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Calculator.g.cs
+D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calculator.xbf
