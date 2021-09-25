@@ -7,22 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:media="using:Microsoft.UI.Xaml.Media"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    x:Name="MainPage_Page"
     Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}"
     mc:Ignorable="d">
 
 
 
 
-    <Grid ColumnSpacing="10.0">
+    <Grid Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}" ColumnSpacing="10.0">
+
         <muxc:NavigationView
             x:Name="NavigationView"
             HorizontalContentAlignment="Left"
             IsBackButtonVisible="Collapsed"
             PaneDisplayMode="LeftMinimal"
             SelectionChanged="SelectionChanged">
-            <!--<muxc:NavigationView.Resources>
-                <SolidColorBrush x:Key="" Color="Red" />
-            </muxc:NavigationView.Resources>-->
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem
                     Content="Main Page"

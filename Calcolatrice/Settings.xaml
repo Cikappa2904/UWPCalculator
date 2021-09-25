@@ -6,8 +6,26 @@
     xmlns:local="using:Calcolatrice"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    x:FieldModifier="public"
     Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}"
     mc:Ignorable="d">
 
-    <Grid />
+    <Grid>
+        <TextBlock
+            x:Name="Title"
+            Margin="45,18,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Theme"
+            TextWrapping="Wrap" />
+        <muxc:RadioButtons
+            x:Name="ThemeSelector"
+            Margin="41,27,-41,-27"
+            x:FieldModifier="public"
+            SelectionChanged="ThemeSelector_SelectionChanged">
+            <x:String>Light</x:String>
+            <x:String>Dark</x:String>
+            <x:String>Use system settings</x:String>
+        </muxc:RadioButtons>
+    </Grid>
 </Page>

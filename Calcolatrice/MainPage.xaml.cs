@@ -37,7 +37,7 @@ namespace Calcolatrice
 
             var coreTitleBar = CoreApplication.GetCurrentView().TitleBar; //Make titlebar acrylic
             coreTitleBar.ExtendViewIntoTitleBar = true;
-
+ 
             var view = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView(); //Make button acrylic
             view.TitleBar.ButtonBackgroundColor = Windows.UI.Colors.Transparent;
             view.TitleBar.ButtonInactiveBackgroundColor = Windows.UI.Colors.Transparent;
@@ -49,11 +49,13 @@ namespace Calcolatrice
         {
             if (args.IsSettingsSelected)
             {
-               // Frame.Navigate(typeof(Settings));
+               MainFrame.Navigate(typeof(Settings));
+                
+
+              
             }
 
         }
-
 
     }
 
