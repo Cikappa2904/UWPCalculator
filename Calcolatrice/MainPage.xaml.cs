@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage;
 
 using MUXC = Microsoft.UI.Xaml.Controls;
 
@@ -30,7 +31,8 @@ namespace Calcolatrice
     /// </summary>
     public sealed partial class MainPage : Page
     {
- 
+
+        ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
         public MainPage()
         {
             this.InitializeComponent();
@@ -42,20 +44,48 @@ namespace Calcolatrice
             view.TitleBar.ButtonBackgroundColor = Windows.UI.Colors.Transparent;
             view.TitleBar.ButtonInactiveBackgroundColor = Windows.UI.Colors.Transparent;
 
+
+                if (Window.Current.Content is FrameworkElement frameworkElement)
+                {
+                    switch (localSettings.Values["Theme"])
+                    {
+                        case "Light":
+                            frameworkElement.RequestedTheme = ElementTheme.Light;
+                            break;
+                        case "Dark":
+                            frameworkElement.RequestedTheme = ElementTheme.Dark;
+                            break;
+                        case "SystemDefault":
+                            frameworkElement.RequestedTheme = ElementTheme.Default;
+                            break;
+                    }
+                }
+
+
+      
+
             MainFrame.Navigate(typeof(Calculator));
         }
 
-        private void SelectionChanged(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs args)
+        private void SelectionChanged(MUXC.NavigationView sender, MUXC.NavigationViewSelectionChangedEventArgs args)
         {
             if (args.IsSettingsSelected)
             {
                MainFrame.Navigate(typeof(Settings));
-                
-
-              
             }
+            else
+            {
+                MUXC.NavigationViewItem item = args.SelectedItem as MUXC.NavigationViewItem;
 
+                switch (item.Tag.ToString()) //This is a switch with just one case; it's here to be used if I want to add another page
+                {
+                    case "MainPage":
+                        MainFrame.Navigate(typeof(Calculator));
+                        break;
+                }
+            }
         }
+
 
     }
 

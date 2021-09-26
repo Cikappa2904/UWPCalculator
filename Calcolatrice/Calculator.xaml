@@ -224,9 +224,9 @@
             FontSize="16px"
             IsTabStop="False"
             Style="{StaticResource AccentButtonStyle}">
-            <Button.KeyboardAccelerators>
+            <!--<Button.KeyboardAccelerators>
                 <KeyboardAccelerator Key="Enter" Modifiers="None" />
-            </Button.KeyboardAccelerators>
+            </Button.KeyboardAccelerators>-->
         </Button>
         <Button
             x:Name="BottonePiu"
@@ -358,12 +358,85 @@
 
 
         <!--  SelectionChanged="NavigationView_SelectionChanged"  -->
-
-
-
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Base">
+                <VisualState x:Name="Small">
+                    <VisualState.Setters>
+                        <Setter Target="number7.(Control.FontSize)" Value="8" />
+                        <Setter Target="number8.(Control.FontSize)" Value="8" />
+                        <Setter Target="number9.(Control.FontSize)" Value="8" />
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="8" />
+                        <Setter Target="number4.(Control.FontSize)" Value="8" />
+                        <Setter Target="number5.(Control.FontSize)" Value="8" />
+                        <Setter Target="number6.(Control.FontSize)" Value="8" />
+                        <Setter Target="button1.(Control.FontSize)" Value="8" />
+                        <Setter Target="number1.(Control.FontSize)" Value="8" />
+                        <Setter Target="number2.(Control.FontSize)" Value="8" />
+                        <Setter Target="number3.(Control.FontSize)" Value="8" />
+                        <Setter Target="button2.(Control.FontSize)" Value="8" />
+                        <Setter Target="button.(Control.FontSize)" Value="8" />
+                        <Setter Target="number0.(Control.FontSize)" Value="8" />
+                        <Setter Target="equal_sign.(Control.FontSize)" Value="8" />
+                        <Setter Target="button3.(Control.FontSize)" Value="8" />
+                        <Setter Target="dot.(Control.FontSize)" Value="8" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="200" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Normal">
+                    <VisualState.Setters>
+                        <Setter Target="number7.(Control.FontSize)" Value="12" />
+                        <Setter Target="number8.(Control.FontSize)" Value="12" />
+                        <Setter Target="number9.(Control.FontSize)" Value="12" />
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="12" />
+                        <Setter Target="number4.(Control.FontSize)" Value="12" />
+                        <Setter Target="number5.(Control.FontSize)" Value="12" />
+                        <Setter Target="number6.(Control.FontSize)" Value="12" />
+                        <Setter Target="button1.(Control.FontSize)" Value="12" />
+                        <Setter Target="number1.(Control.FontSize)" Value="12" />
+                        <Setter Target="number2.(Control.FontSize)" Value="12" />
+                        <Setter Target="number3.(Control.FontSize)" Value="12" />
+                        <Setter Target="button2.(Control.FontSize)" Value="12" />
+                        <Setter Target="button.(Control.FontSize)" Value="12" />
+                        <Setter Target="number0.(Control.FontSize)" Value="12" />
+                        <Setter Target="equal_sign.(Control.FontSize)" Value="12" />
+                        <Setter Target="button3.(Control.FontSize)" Value="12" />
+                        <Setter Target="dot.(Control.FontSize)" Value="12" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="400" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Big">
+                    <VisualState.Setters>
+                        <Setter Target="number7.(Control.FontSize)" Value="16" />
+                        <Setter Target="number8.(Control.FontSize)" Value="16" />
+                        <Setter Target="number9.(Control.FontSize)" Value="16" />
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="16" />
+                        <Setter Target="number4.(Control.FontSize)" Value="16" />
+                        <Setter Target="number5.(Control.FontSize)" Value="16" />
+                        <Setter Target="number6.(Control.FontSize)" Value="16" />
+                        <Setter Target="button1.(Control.FontSize)" Value="16" />
+                        <Setter Target="number1.(Control.FontSize)" Value="16" />
+                        <Setter Target="number2.(Control.FontSize)" Value="16" />
+                        <Setter Target="number3.(Control.FontSize)" Value="16" />
+                        <Setter Target="button2.(Control.FontSize)" Value="16" />
+                        <Setter Target="button.(Control.FontSize)" Value="16" />
+                        <Setter Target="number0.(Control.FontSize)" Value="16" />
+                        <Setter Target="equal_sign.(Control.FontSize)" Value="16" />
+                        <Setter Target="button3.(Control.FontSize)" Value="16" />
+                        <Setter Target="dot.(Control.FontSize)" Value="16" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="800" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Grid>
     <!--  Roba di Blend  -->
-    <VisualStateManager.VisualStateGroups>
+    <!--<VisualStateManager.VisualStateGroups>
         <VisualStateGroup x:Name="VisualStateGroup">
             <VisualState x:Name="Small">
                 <VisualState.Setters>
@@ -436,7 +509,8 @@
                 </VisualState.StateTriggers>
             </VisualState>
         </VisualStateGroup>
-    </VisualStateManager.VisualStateGroups>
+    </VisualStateManager.VisualStateGroups>-->
+
 </Page>
 
 

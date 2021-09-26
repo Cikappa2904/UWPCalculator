@@ -15,22 +15,25 @@
 
 
     <Grid Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}" ColumnSpacing="10.0">
-
         <muxc:NavigationView x:ConnectionId='2'
             x:Name="NavigationView"
             HorizontalContentAlignment="Left"
+            IsAccessKeyScope="False"
             IsBackButtonVisible="Collapsed"
+            IsBackEnabled="True"
+            IsTabStop="False"
             PaneDisplayMode="LeftMinimal"
                                                >
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem
                     Content="Main Page"
                     Icon="Home"
+                    IsTabStop="False"
                     Tag="MainPage" />
             </muxc:NavigationView.MenuItems>
 
             <Frame x:ConnectionId='3' x:Name="MainFrame" Margin="0,0,0,0" />
-
+            <!--  Loaded="NavigationView_Loaded"  -->
         </muxc:NavigationView>
 
 

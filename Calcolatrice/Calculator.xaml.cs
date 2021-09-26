@@ -110,6 +110,71 @@ namespace Calcolatrice
                         }
                         break;
                     }
+                case 13: //Equal sign 
+                    {
+                        //TODO: Put this in a function
+                        if (primoValore.Text != "")
+                        {
+                            pValore = double.Parse(primoValore.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+                        }
+                        if (risultato.Text != "")
+                        {
+                            tValore = double.Parse(risultato.Text, System.Globalization.NumberStyles.Any, CultureInfo.CurrentCulture);
+                        }
+
+                        switch (lastSignUsed)
+                        {
+                            case 0:
+                                {
+                                    break;
+                                }
+                            case 1: //Caso 1: addizione
+                                {
+                                    primoValore.Text = pValore.ToString();
+                                    result = pValore + tValore;
+                                    segno.Text = " + ";
+                                    secondoValore.Text = tValore.ToString();
+                                    risultato.Text = result.ToString();
+                                    uguale.Text = "=";
+                                    break;
+                                }
+                            case 2: //Caso 2: sottrazione
+                                {
+                                    primoValore.Text = pValore.ToString();
+                                    result = pValore - tValore;
+                                    segno.Text = " - ";
+                                    secondoValore.Text = tValore.ToString();
+                                    uguale.Text = "=";
+                                    risultato.Text = result.ToString();
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    primoValore.Text = pValore.ToString();
+                                    result = pValore * tValore;
+                                    segno.Text = " * ";
+                                    secondoValore.Text = tValore.ToString();
+                                    uguale.Text = "=";
+                                    risultato.Text = result.ToString();
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    primoValore.Text = pValore.ToString();
+                                    result = pValore / tValore;
+                                    segno.Text = " / ";
+                                    secondoValore.Text = tValore.ToString();
+                                    uguale.Text = "=";
+                                    risultato.Text = result.ToString();
+                                    break;
+                                }
+                        }
+
+
+                        didEqualGetPressed = true;
+                        lastSignUsed = 0;
+                        break;
+                    }
 
 
             }

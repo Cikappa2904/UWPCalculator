@@ -12,15 +12,26 @@
 
     <Grid>
         <TextBlock
-            x:Name="Title"
-            Margin="45,18,0,0"
+            x:Name="SettingsTitle"
+            Margin="66,22,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            FontSize="24"
+            FontWeight="Bold"
+            Text="Settings"
+            TextWrapping="Wrap" />
+        <TextBlock
+            x:Name="ThemeTitle"
+            Margin="66,67,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="16"
+            FontWeight="Bold"
             Text="Theme"
             TextWrapping="Wrap" />
         <muxc:RadioButtons
             x:Name="ThemeSelector"
-            Margin="41,27,-41,-27"
+            Margin="66,93,-66,-93"
             x:FieldModifier="public"
             SelectionChanged="ThemeSelector_SelectionChanged">
             <x:String>Light</x:String>

@@ -35,7 +35,23 @@ namespace Calcolatrice
             var DefaultTheme = new Windows.UI.ViewManagement.UISettings();
             var uiTheme = DefaultTheme.GetColorValue(Windows.UI.ViewManagement.UIColorType.Background).ToString();
 
+            if (localSettings.Values["Theme"] == null)
+            {
+                localSettings.Values["Theme"] = "SystemDefault";
+            }
 
+            switch(localSettings.Values["Theme"])
+            {
+                case "Light":
+                    ThemeSelector.SelectedIndex = 0;
+                    break;
+                case "Dark":
+                    ThemeSelector.SelectedIndex = 1;
+                    break;
+                case "SystemDefault":
+                    ThemeSelector.SelectedIndex = 2;
+                    break;
+            }
 
         }
 
@@ -43,32 +59,26 @@ namespace Calcolatrice
         private void ThemeSelector_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string selection = ThemeSelector.SelectedIndex.ToString();
-            switch (selection)
+            if (Window.Current.Content is FrameworkElement frameworkElement)
             {
-                case "0":
-                    if (Window.Current.Content is FrameworkElement frameworkElement)
-                    {
-                        frameworkElement.RequestedTheme = ElementTheme.Light;
-                        localSettings.Values["Theme"] = "Light";
-                    }
-                    break;
-                case "1":
-                    if (Window.Current.Content is FrameworkElement frameworkElement1)
-                    {
-                        frameworkElement1.RequestedTheme = ElementTheme.Dark;
-                        localSettings.Values["Theme"] = "Dark";
+                switch (selection)
+                {
+                    case "0":
+                            frameworkElement.RequestedTheme = ElementTheme.Light;
+                            localSettings.Values["Theme"] = "Light";
 
-                    }
-                    break;
-                case "2":
-                    if (Window.Current.Content is FrameworkElement frameworkElement2)
-                    {
-                        frameworkElement2.RequestedTheme = ElementTheme.Default;
-                        localSettings.Values["Theme"] = "SystemDefault";
-
-                    }
-                    break;
+                        break;
+                    case "1":
+                            frameworkElement.RequestedTheme = ElementTheme.Dark;
+                            localSettings.Values["Theme"] = "Dark";
+                        break;
+                    case "2":
+                            frameworkElement.RequestedTheme = ElementTheme.Default;
+                            localSettings.Values["Theme"] = "SystemDefault";
+                        break;
+                }
             }
+            
 
         }
 
