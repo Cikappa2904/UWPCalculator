@@ -38,6 +38,19 @@
             <x:String>Dark</x:String>
             <x:String>Use system settings</x:String>
         </muxc:RadioButtons>
+        <TextBlock x:ConnectionId='5'
+            x:Name="AboutTitle"
+            Margin="65,227,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="16"
+            FontWeight="Bold"
+            Text="About"
+            TextWrapping="Wrap" />
+        <HyperlinkButton
+            Margin="54,253,0,0"
+            VerticalAlignment="Top"
+            Content="GitHub " NavigateUri="https://github.com/Cikappa2904/UWPCalculator" />
     </Grid>
 </Page>
 

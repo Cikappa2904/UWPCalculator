@@ -386,30 +386,6 @@
                 </VisualState>
                 <VisualState x:ConnectionId='26' x:Name="Normal">
                     <VisualState.Setters>
-                        <Setter Target="number7.(Control.FontSize)" Value="12" />
-                        <Setter Target="number8.(Control.FontSize)" Value="12" />
-                        <Setter Target="number9.(Control.FontSize)" Value="12" />
-                        <Setter Target="BottonePiu.(Control.FontSize)" Value="12" />
-                        <Setter Target="number4.(Control.FontSize)" Value="12" />
-                        <Setter Target="number5.(Control.FontSize)" Value="12" />
-                        <Setter Target="number6.(Control.FontSize)" Value="12" />
-                        <Setter Target="button1.(Control.FontSize)" Value="12" />
-                        <Setter Target="number1.(Control.FontSize)" Value="12" />
-                        <Setter Target="number2.(Control.FontSize)" Value="12" />
-                        <Setter Target="number3.(Control.FontSize)" Value="12" />
-                        <Setter Target="button2.(Control.FontSize)" Value="12" />
-                        <Setter Target="button.(Control.FontSize)" Value="12" />
-                        <Setter Target="number0.(Control.FontSize)" Value="12" />
-                        <Setter Target="equal_sign.(Control.FontSize)" Value="12" />
-                        <Setter Target="button3.(Control.FontSize)" Value="12" />
-                        <Setter Target="dot.(Control.FontSize)" Value="12" />
-                    </VisualState.Setters>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowHeight="400" />
-                    </VisualState.StateTriggers>
-                </VisualState>
-                <VisualState x:ConnectionId='27' x:Name="Big">
-                    <VisualState.Setters>
                         <Setter Target="number7.(Control.FontSize)" Value="16" />
                         <Setter Target="number8.(Control.FontSize)" Value="16" />
                         <Setter Target="number9.(Control.FontSize)" Value="16" />
@@ -429,7 +405,51 @@
                         <Setter Target="dot.(Control.FontSize)" Value="16" />
                     </VisualState.Setters>
                     <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="400" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:ConnectionId='27' x:Name="Big">
+                    <VisualState.Setters>
+                        <Setter Target="number7.(Control.FontSize)" Value="24" />
+                        <Setter Target="number8.(Control.FontSize)" Value="24" />
+                        <Setter Target="number9.(Control.FontSize)" Value="24" />
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="24" />
+                        <Setter Target="number4.(Control.FontSize)" Value="24" />
+                        <Setter Target="number5.(Control.FontSize)" Value="24" />
+                        <Setter Target="number6.(Control.FontSize)" Value="24" />
+                        <Setter Target="button1.(Control.FontSize)" Value="24" />
+                        <Setter Target="number1.(Control.FontSize)" Value="24" />
+                        <Setter Target="number2.(Control.FontSize)" Value="24" />
+                        <Setter Target="number3.(Control.FontSize)" Value="24" />
+                        <Setter Target="button2.(Control.FontSize)" Value="24" />
+                        <Setter Target="button.(Control.FontSize)" Value="24" />
+                        <Setter Target="number0.(Control.FontSize)" Value="24" />
+                        <Setter Target="equal_sign.(Control.FontSize)" Value="24" />
+                        <Setter Target="button3.(Control.FontSize)" Value="24" />
+                        <Setter Target="dot.(Control.FontSize)" Value="24" />
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowHeight="800" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:ConnectionId='28' x:Name="TooBig">
+                    <VisualState.Setters>
+                        <Setter Target="number7.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number8.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number9.(Control.FontSize)" Value="24"/>
+                        <Setter Target="BottonePiu.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number4.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number5.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number6.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button1.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number1.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number2.(Control.FontSize)" Value="24"/>
+                        <Setter Target="number3.(Control.FontSize)" Value="24"/>
+                        <Setter Target="button3.(Control.FontSize)" Value="24"/>
+                        <Setter Target="dot.(Control.FontSize)" Value="24"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000" MinWindowHeight="1000"/>
                     </VisualState.StateTriggers>
                 </VisualState>
             </VisualStateGroup>

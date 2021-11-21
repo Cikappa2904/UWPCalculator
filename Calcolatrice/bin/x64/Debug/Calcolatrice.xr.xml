@@ -8,6 +8,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
@@ -81,15 +82,18 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
+      <RootProperty Name="MinWindowWidth" />
       <RootProperty Name="MinWindowHeight" />
     </RootType>
     <RootType FullName="Calcolatrice.Calculator" />
+    <RootType FullName="Windows.UI.Xaml.Thickness" />
     <RootType FullName="Microsoft.UI.Xaml.Controls.NavigationView">
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="IsAccessKeyScope" />
       <RootProperty Name="IsBackButtonVisible" />
       <RootProperty Name="IsBackEnabled" />
       <RootProperty Name="IsTabStop" />
+      <RootProperty Name="IsTitleBarAutoPaddingEnabled" />
       <RootProperty Name="PaneDisplayMode" />
       <RootProperty Name="MenuItems" />
       <RootProperty Name="Content" />
@@ -109,6 +113,12 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Items" />
       <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="NavigateUri" />
     </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="Calcolatrice.Settings" />
