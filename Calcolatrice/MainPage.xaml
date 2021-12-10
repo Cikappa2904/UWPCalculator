@@ -8,7 +8,6 @@
     xmlns:media="using:Microsoft.UI.Xaml.Media"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     x:Name="MainPage_Page"
-    Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -16,7 +15,7 @@
     </Page.Resources>
 
 
-    <Grid Background="{ThemeResource AcrylicBackgroundFillColorDefaultBrush}" ColumnSpacing="10.0">
+    <Grid x:Name="MainGrid" ColumnSpacing="10.0">
         <muxc:NavigationView
             x:Name="NavigationView"
             HorizontalContentAlignment="Left"
@@ -35,7 +34,7 @@
                     Tag="MainPage" />
             </muxc:NavigationView.MenuItems>
 
-            <Frame x:Name="MainFrame" Margin="0,0,0,0" />
+            <Frame x:Name="MainFrame" Margin="0,0,0,0"  muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"/>
             <!--  Loaded="NavigationView_Loaded"  -->
         </muxc:NavigationView>
 

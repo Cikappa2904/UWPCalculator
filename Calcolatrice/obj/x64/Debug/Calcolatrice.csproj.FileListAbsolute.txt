@@ -148,3 +148,4 @@ D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Calculator.xbf
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Calculator.g.i.cs
 D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\Calculator.g.cs
 D:\File Personali\Github\UWPCalculator\Calcolatrice\bin\x64\Debug\Calculator.xbf
+D:\File Personali\Github\UWPCalculator\Calcolatrice\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424779200000000.json

@@ -61,6 +61,17 @@ namespace Calcolatrice
                     }
                 }
 
+                if(!IsWindows11())
+                {
+                    Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
+                    myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
+                    myBrush.TintOpacity = 0.6;
+
+                    MainFrame.Background = myBrush;
+                }
+
+
+
 
       
 
@@ -83,6 +94,21 @@ namespace Calcolatrice
                         MainFrame.Navigate(typeof(Calculator));
                         break;
                 }
+            }
+        }
+
+        public bool IsWindows11()
+        {
+            var v = Int64.Parse(Windows.System.Profile.AnalyticsInfo.VersionInfo.DeviceFamilyVersion);
+            var build = (v & 0x00000000FFFF0000) >> 16;
+
+            if (build >= 22000)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
 
