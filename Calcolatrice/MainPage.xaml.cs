@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Storage;
 
 using MUXC = Microsoft.UI.Xaml.Controls;
+using Windows.UI;
 
 
 // Il modello di elemento Pagina vuota è documentato all'indirizzo https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x410
@@ -64,7 +65,17 @@ namespace Calcolatrice
                 if(!IsWindows11())
                 {
                     Windows.UI.Xaml.Media.AcrylicBrush myBrush = new Windows.UI.Xaml.Media.AcrylicBrush();
-                    myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;
+                    myBrush.BackgroundSource = Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop;   //Windows.UI.Xaml.Media.AcrylicBackgroundSource.HostBackdrop
+                    var isDark = Application.Current.RequestedTheme == ApplicationTheme.Dark;
+                    if (!isDark)
+                    {
+                        myBrush.TintColor = Color.FromArgb(255, 255, 255, 255);
+                    }
+                    else
+                    {
+                        myBrush.TintColor = Color.FromArgb(255, 0, 0, 0);
+                    }
+
                     myBrush.TintOpacity = 0.6;
 
                     MainFrame.Background = myBrush;
