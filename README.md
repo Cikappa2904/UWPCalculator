@@ -7,5 +7,5 @@ However, if for whatever reason you want to use my app, be sure to report bugs a
 ## Italian
 Questa è una piccola app UWP che ho fatto usando WinUI 2.6, principalmente per poter imparare come lavorare con XAML, C# e in generale con questo framework.
 Proverò a migliorarla sempre di più, però se veramente avete bisogno di una calcolatrice decente per Windows, usate semplicemente la calcolatrice default, è addirittura opensource (https://github.com/Microsoft/calculator).  
-Se per qualche motivo però vi va di usare la mia app, reportate ogni bug e ogni problema nella sezoine Issues della repo di GitHub, e se sapete realizzare app UWP in C#, un aiuto farebbe sempre comodo
+Se per qualche motivo però vi va di usare la mia app, reportate ogni bug e ogni problema nella sezione Issues della repo di GitHub, e se sapete realizzare app UWP in C#, un aiuto farebbe sempre comodo
 
